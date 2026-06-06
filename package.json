@@ -1,6 +1,6 @@
 {
   "name": "@n8n-dev/n8n-nodes-hcloud",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Hetzner Cloud API",
   "license": "MIT",
   "homepage": "",

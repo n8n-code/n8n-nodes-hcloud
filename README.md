@@ -13,7 +13,7 @@ Every time you connect n8n to hcloud, you waste hours mapping endpoints, definin
 
 **What if your n8n node just... worked?**
 
-This node gives you **21+ resources** out of the box — **Actions**, **Certificates**, **Datacenters**, **Firewalls**, **Floating Ips**, and 16 more — with full CRUD operations, typed parameters, and zero manual configuration.
+This node gives you **21+ resources** out of the box: **Actions**, **Certificates**, **Datacenters**, **Firewalls**, **Floating Ips**, and 16 more: with full CRUD operations, typed parameters, and zero manual configuration.
 
 > One developer built a tool that auto-generates n8n nodes from any OpenAPI spec.
 >
@@ -23,11 +23,11 @@ This node gives you **21+ resources** out of the box — **Actions**, **Certific
 
 ## What You Get
 
-- **21+ resources** — **Actions**, **Certificates**, **Datacenters**, **Firewalls**, **Floating Ips**, and 16 more
-- **Full CRUD** — Create, Read, Update, Delete operations for every resource
-- **Typed parameters** — No more guessing field types
-- **Built-in auth** — API key authentication, ready to go
-- **Declarative** — Native n8n performance, no custom execute() overhead
+- **21+ resources**: **Actions**, **Certificates**, **Datacenters**, **Firewalls**, **Floating Ips**, and 16 more
+- **Full CRUD**: Create, Read, Update, Delete operations for every resource
+- **Typed parameters**: No more guessing field types
+- **Built-in auth**: API key authentication, ready to go
+- **Declarative**: Native n8n performance, no custom execute() overhead
 
 ---
 

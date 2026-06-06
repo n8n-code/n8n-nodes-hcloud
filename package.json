@@ -1,11 +1,20 @@
 {
   "name": "@n8n-dev/n8n-nodes-hcloud",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Hetzner Cloud API",
   "license": "MIT",
   "homepage": "",
   "keywords": [
-    "n8n-community-node-package"
+    "n8n",
+    "n8n-community-node",
+    "n8n-node",
+    "n8n-community-node-package",
+    "openapi",
+    "swagger",
+    "api",
+    "automation",
+    "workflow",
+    "${safeName}"
   ],
   "author": {
     "name": "kelvinzer0",

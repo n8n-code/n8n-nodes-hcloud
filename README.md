@@ -9,7 +9,7 @@
 
 Every time you connect n8n to hcloud, you waste hours mapping endpoints, defining parameters, and debugging schemas. You copy-paste from docs, fix edge cases, and pray nothing breaks.
 
-**What if your n8n node just... worked?**
+**What if connecting n8n to hcloud took 5 minutes, not half a day?**
 
 This node gives you **21+ resources** out of the box: **Actions**, **Certificates**, **Datacenters**, **Firewalls**, **Floating Ips**, and 16 more: with full CRUD operations, typed parameters, and zero manual configuration.
 
@@ -17,7 +17,7 @@ This node gives you **21+ resources** out of the box: **Actions**, **Certificate
 
 ## What You Get
 
-- **21+ resources**: **Actions**, **Certificates**, **Datacenters**, **Firewalls**, **Floating Ips**, and 16 more
+- **Zero boilerplate**: Resource, operation, dan field sudah terkonfigurasi
 - **Full CRUD**: Create, Read, Update, Delete operations for every resource
 - **Typed parameters**: No more guessing field types
 - **Built-in auth**: API key authentication, ready to go
@@ -94,9 +94,9 @@ That's it. No configuration files. No code. It just works.
 ---
 
 ## Auto-Generated
-
 This node was auto-generated from the official **hcloud** OpenAPI specification using
-[@n8n-dev/n8n-openapi-node-ultimate](https://github.com/kelvinzer0/n8n-openapi-node-ultimate).
+[@n8n-dev/n8n-openapi-node-ultimate](https://github.com/kelvinzer0/n8n-openapi-node-ultimate),
+then validated against the live API so you get accurate types and real parameters, not guesswork.
 
 When the hcloud API updates, this node updates too.
 
@@ -104,7 +104,8 @@ When the hcloud API updates, this node updates too.
 
 ## Support This Project
 
-This node was built by one developer who wanted to make n8n + OpenAPI effortless for everyone.
+If this node saved you hours of work, consider supporting continued development — 
+new APIs, better error handling, and faster updates.
 
 Your donation funds new features, more API support, and better tooling for every developer after you.
 

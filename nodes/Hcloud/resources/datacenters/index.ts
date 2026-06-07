@@ -161,6 +161,31 @@ export const datacentersDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Datacenters"
+					],
+					"operation": [
+						"List Data Centers"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /datacenters/{id}",
 			"name": "operation",
 			"type": "notice",
@@ -186,6 +211,31 @@ export const datacentersDescription: INodeProperties[] = [
 			"description": "ID of the Data Center.",
 			"default": 42,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Datacenters"
+					],
+					"operation": [
+						"Get Data Center"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [

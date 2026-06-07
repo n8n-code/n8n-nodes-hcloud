@@ -307,6 +307,31 @@ export const certificatesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Certificates"
+					],
+					"operation": [
+						"List Certificates"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /certificates",
 			"name": "operation",
 			"type": "notice",
@@ -487,6 +512,31 @@ export const certificatesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Certificates"
+					],
+					"operation": [
+						"Create Certificate"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "DELETE /certificates/{id}",
 			"name": "operation",
 			"type": "notice",
@@ -524,6 +574,31 @@ export const certificatesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Certificates"
+					],
+					"operation": [
+						"Delete Certificate"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /certificates/{id}",
 			"name": "operation",
 			"type": "notice",
@@ -549,6 +624,31 @@ export const certificatesDescription: INodeProperties[] = [
 			"description": "ID of the Certificate.",
 			"default": 42,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Certificates"
+					],
+					"operation": [
+						"Get Certificate"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -634,6 +734,31 @@ export const certificatesDescription: INodeProperties[] = [
 					"propertyInDotNotation": false,
 					"type": "body",
 					"value": "={{ $value }}"
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Certificates"
+					],
+					"operation": [
+						"Replace Certificate"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -785,6 +910,31 @@ export const certificatesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Certificates"
+					],
+					"operation": [
+						"List Actions For Certificate"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /certificates/{id}/actions/{action_id}",
 			"name": "operation",
 			"type": "notice",
@@ -840,6 +990,31 @@ export const certificatesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Certificates"
+					],
+					"operation": [
+						"Get Action For Certificate"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /certificates/{id}/actions/retry",
 			"name": "operation",
 			"type": "notice",
@@ -865,6 +1040,31 @@ export const certificatesDescription: INodeProperties[] = [
 			"description": "ID of the Certificate.",
 			"default": 42,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Certificates"
+					],
+					"operation": [
+						"Retry Issuance Or Renewal"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -1021,6 +1221,31 @@ export const certificatesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Certificates"
+					],
+					"operation": [
+						"List Certificate Actions"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /certificates/actions/{id}",
 			"name": "operation",
 			"type": "notice",
@@ -1046,6 +1271,31 @@ export const certificatesDescription: INodeProperties[] = [
 			"description": "ID of the Action.",
 			"default": 42,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Certificates"
+					],
+					"operation": [
+						"Get Certificate Action"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [

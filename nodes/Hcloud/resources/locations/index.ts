@@ -161,6 +161,31 @@ export const locationsDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Locations"
+					],
+					"operation": [
+						"List Locations"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /locations/{id}",
 			"name": "operation",
 			"type": "notice",
@@ -186,6 +211,31 @@ export const locationsDescription: INodeProperties[] = [
 			"description": "ID of the Location.",
 			"default": 42,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Locations"
+					],
+					"operation": [
+						"Get Location"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [

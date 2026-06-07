@@ -48,4 +48,29 @@ export const pricingDescription: INodeProperties[] = [
 				}
 			}
 		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Pricing"
+					],
+					"operation": [
+						"List Prices"
+					]
+				}
+			}
+		},
 ];

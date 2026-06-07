@@ -583,6 +583,31 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Servers"
+					],
+					"operation": [
+						"List Servers"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /servers",
 			"name": "operation",
 			"type": "notice",
@@ -980,6 +1005,31 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Servers"
+					],
+					"operation": [
+						"Create Server"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "DELETE /servers/{id}",
 			"name": "operation",
 			"type": "notice",
@@ -1017,6 +1067,31 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Servers"
+					],
+					"operation": [
+						"Delete Server"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /servers/{id}",
 			"name": "operation",
 			"type": "notice",
@@ -1042,6 +1117,31 @@ export const serversDescription: INodeProperties[] = [
 			"description": "ID of the Server.",
 			"default": 42,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Servers"
+					],
+					"operation": [
+						"Get Server"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -1127,6 +1227,31 @@ export const serversDescription: INodeProperties[] = [
 					"propertyInDotNotation": false,
 					"type": "body",
 					"value": "={{ $value }}"
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Servers"
+					],
+					"operation": [
+						"Replace Server"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -1278,6 +1403,31 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Servers"
+					],
+					"operation": [
+						"List Actions For Server"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /servers/{id}/actions/{action_id}",
 			"name": "operation",
 			"type": "notice",
@@ -1321,6 +1471,31 @@ export const serversDescription: INodeProperties[] = [
 			"description": "ID of the Action.",
 			"default": 42,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Servers"
+					],
+					"operation": [
+						"Get Action For Server"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -1396,6 +1571,31 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Servers"
+					],
+					"operation": [
+						"Add Server To Placement Group"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /servers/{id}/actions/attach_iso",
 			"name": "operation",
 			"type": "notice",
@@ -1445,6 +1645,31 @@ export const serversDescription: INodeProperties[] = [
 					"propertyInDotNotation": false,
 					"type": "body",
 					"value": "={{ $value }}"
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Servers"
+					],
+					"operation": [
+						"Attach Iso To Server"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -1597,6 +1822,31 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Servers"
+					],
+					"operation": [
+						"Attach Server To Network"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /servers/{id}/actions/change_alias_ips",
 			"name": "operation",
 			"type": "notice",
@@ -1672,6 +1922,31 @@ export const serversDescription: INodeProperties[] = [
 					"propertyInDotNotation": false,
 					"type": "body",
 					"value": "={{ $value }}"
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Servers"
+					],
+					"operation": [
+						"Change Alias Ips Of Network"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -1775,6 +2050,31 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Servers"
+					],
+					"operation": [
+						"Change Reverse Dns Entry For This Server"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /servers/{id}/actions/change_protection",
 			"name": "operation",
 			"type": "notice",
@@ -1848,6 +2148,31 @@ export const serversDescription: INodeProperties[] = [
 					"propertyInDotNotation": false,
 					"type": "body",
 					"value": "={{ $value }}"
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Servers"
+					],
+					"operation": [
+						"Change Server Protection"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -1937,6 +2262,31 @@ export const serversDescription: INodeProperties[] = [
 					"propertyInDotNotation": false,
 					"type": "body",
 					"value": "={{ $value }}"
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Servers"
+					],
+					"operation": [
+						"Change Type Of Server"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -2073,6 +2423,31 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Servers"
+					],
+					"operation": [
+						"Create Image From Server"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /servers/{id}/actions/detach_from_network",
 			"name": "operation",
 			"type": "notice",
@@ -2136,6 +2511,31 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Servers"
+					],
+					"operation": [
+						"Detach Server From Network"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /servers/{id}/actions/detach_iso",
 			"name": "operation",
 			"type": "notice",
@@ -2161,6 +2561,31 @@ export const serversDescription: INodeProperties[] = [
 			"description": "ID of the Server.",
 			"default": 42,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Servers"
+					],
+					"operation": [
+						"Detach Iso From Server"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -2210,6 +2635,31 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Servers"
+					],
+					"operation": [
+						"Disable Backups For Server"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /servers/{id}/actions/disable_rescue",
 			"name": "operation",
 			"type": "notice",
@@ -2247,6 +2697,31 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Servers"
+					],
+					"operation": [
+						"Disable Rescue Mode For Server"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /servers/{id}/actions/enable_backup",
 			"name": "operation",
 			"type": "notice",
@@ -2272,6 +2747,31 @@ export const serversDescription: INodeProperties[] = [
 			"description": "ID of the Server.",
 			"default": 42,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Servers"
+					],
+					"operation": [
+						"Enable And Configure Backups For Server"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -2377,6 +2877,31 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Servers"
+					],
+					"operation": [
+						"Enable Rescue Mode For Server"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /servers/{id}/actions/poweroff",
 			"name": "operation",
 			"type": "notice",
@@ -2402,6 +2927,31 @@ export const serversDescription: INodeProperties[] = [
 			"description": "ID of the Server.",
 			"default": 42,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Servers"
+					],
+					"operation": [
+						"Power Off Server"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -2451,6 +3001,31 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Servers"
+					],
+					"operation": [
+						"Power On Server"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /servers/{id}/actions/reboot",
 			"name": "operation",
 			"type": "notice",
@@ -2476,6 +3051,31 @@ export const serversDescription: INodeProperties[] = [
 			"description": "ID of the Server.",
 			"default": 42,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Servers"
+					],
+					"operation": [
+						"Soft Reboot Server"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -2576,6 +3176,31 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Servers"
+					],
+					"operation": [
+						"Rebuild Server From Image"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /servers/{id}/actions/remove_from_placement_group",
 			"name": "operation",
 			"type": "notice",
@@ -2601,6 +3226,31 @@ export const serversDescription: INodeProperties[] = [
 			"description": "ID of the Server.",
 			"default": 42,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Servers"
+					],
+					"operation": [
+						"Remove From Placement Group"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -2650,6 +3300,31 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Servers"
+					],
+					"operation": [
+						"Request Console For Server"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /servers/{id}/actions/reset",
 			"name": "operation",
 			"type": "notice",
@@ -2675,6 +3350,31 @@ export const serversDescription: INodeProperties[] = [
 			"description": "ID of the Server.",
 			"default": 42,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Servers"
+					],
+					"operation": [
+						"Reset Server"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -2724,6 +3424,31 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Servers"
+					],
+					"operation": [
+						"Reset Root Password Of Server"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /servers/{id}/actions/shutdown",
 			"name": "operation",
 			"type": "notice",
@@ -2749,6 +3474,31 @@ export const serversDescription: INodeProperties[] = [
 			"description": "ID of the Server.",
 			"default": 42,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Servers"
+					],
+					"operation": [
+						"Shutdown Server"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -2887,6 +3637,31 @@ export const serversDescription: INodeProperties[] = [
 					"property": "step",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Servers"
+					],
+					"operation": [
+						"Get Metrics For Server"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -3045,6 +3820,31 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Servers"
+					],
+					"operation": [
+						"List Server Actions"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /servers/actions/{id}",
 			"name": "operation",
 			"type": "notice",
@@ -3070,6 +3870,31 @@ export const serversDescription: INodeProperties[] = [
 			"description": "ID of the Action.",
 			"default": 42,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Servers"
+					],
+					"operation": [
+						"Get Server Action"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [

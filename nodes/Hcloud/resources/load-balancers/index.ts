@@ -438,6 +438,31 @@ export const loadBalancersDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Load Balancers"
+					],
+					"operation": [
+						"List Load Balancers"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /load_balancers",
 			"name": "operation",
 			"type": "notice",
@@ -709,6 +734,31 @@ export const loadBalancersDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Load Balancers"
+					],
+					"operation": [
+						"Create Load Balancer"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "DELETE /load_balancers/{id}",
 			"name": "operation",
 			"type": "notice",
@@ -746,6 +796,31 @@ export const loadBalancersDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Load Balancers"
+					],
+					"operation": [
+						"Delete Load Balancer"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /load_balancers/{id}",
 			"name": "operation",
 			"type": "notice",
@@ -771,6 +846,31 @@ export const loadBalancersDescription: INodeProperties[] = [
 			"description": "ID of the Load Balancer.",
 			"default": 42,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Load Balancers"
+					],
+					"operation": [
+						"Get Load Balancer"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -856,6 +956,31 @@ export const loadBalancersDescription: INodeProperties[] = [
 					"propertyInDotNotation": false,
 					"type": "body",
 					"value": "={{ $value }}"
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Load Balancers"
+					],
+					"operation": [
+						"Replace Load Balancer"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -1007,6 +1132,31 @@ export const loadBalancersDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Load Balancers"
+					],
+					"operation": [
+						"List Actions For Load Balancer"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /load_balancers/{id}/actions/{action_id}",
 			"name": "operation",
 			"type": "notice",
@@ -1050,6 +1200,31 @@ export const loadBalancersDescription: INodeProperties[] = [
 			"description": "ID of the Action.",
 			"default": 42,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Load Balancers"
+					],
+					"operation": [
+						"Get Action For Load Balancer"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -1268,6 +1443,31 @@ export const loadBalancersDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Load Balancers"
+					],
+					"operation": [
+						"Add Service"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /load_balancers/{id}/actions/add_target",
 			"name": "operation",
 			"type": "notice",
@@ -1445,6 +1645,31 @@ export const loadBalancersDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Load Balancers"
+					],
+					"operation": [
+						"Add Target"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /load_balancers/{id}/actions/attach_to_network",
 			"name": "operation",
 			"type": "notice",
@@ -1558,6 +1783,31 @@ export const loadBalancersDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Load Balancers"
+					],
+					"operation": [
+						"Attach Load Balancer To Network"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /load_balancers/{id}/actions/change_algorithm",
 			"name": "operation",
 			"type": "notice",
@@ -1617,6 +1867,31 @@ export const loadBalancersDescription: INodeProperties[] = [
 					"propertyInDotNotation": false,
 					"type": "body",
 					"value": "={{ $value }}"
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Load Balancers"
+					],
+					"operation": [
+						"Change Algorithm"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -1720,6 +1995,31 @@ export const loadBalancersDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Load Balancers"
+					],
+					"operation": [
+						"Change Reverse Dns Entry For This Load Balancer"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /load_balancers/{id}/actions/change_protection",
 			"name": "operation",
 			"type": "notice",
@@ -1768,6 +2068,31 @@ export const loadBalancersDescription: INodeProperties[] = [
 					"propertyInDotNotation": false,
 					"type": "body",
 					"value": "={{ $value }}"
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Load Balancers"
+					],
+					"operation": [
+						"Change Load Balancer Protection"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -1845,6 +2170,31 @@ export const loadBalancersDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Load Balancers"
+					],
+					"operation": [
+						"Change Type Of Load Balancer"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /load_balancers/{id}/actions/delete_service",
 			"name": "operation",
 			"type": "notice",
@@ -1894,6 +2244,31 @@ export const loadBalancersDescription: INodeProperties[] = [
 					"propertyInDotNotation": false,
 					"type": "body",
 					"value": "={{ $value }}"
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Load Balancers"
+					],
+					"operation": [
+						"Delete Service"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -1971,6 +2346,31 @@ export const loadBalancersDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Load Balancers"
+					],
+					"operation": [
+						"Detach Load Balancer From Network"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /load_balancers/{id}/actions/disable_public_interface",
 			"name": "operation",
 			"type": "notice",
@@ -2008,6 +2408,31 @@ export const loadBalancersDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Load Balancers"
+					],
+					"operation": [
+						"Disable Public Interface Of Load Balancer"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /load_balancers/{id}/actions/enable_public_interface",
 			"name": "operation",
 			"type": "notice",
@@ -2033,6 +2458,31 @@ export const loadBalancersDescription: INodeProperties[] = [
 			"description": "ID of the Load Balancer.",
 			"default": 42,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Load Balancers"
+					],
+					"operation": [
+						"Enable Public Interface Of Load Balancer"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -2183,6 +2633,31 @@ export const loadBalancersDescription: INodeProperties[] = [
 					"propertyInDotNotation": false,
 					"type": "body",
 					"value": "={{ $value }}"
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Load Balancers"
+					],
+					"operation": [
+						"Remove Target"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -2399,6 +2874,31 @@ export const loadBalancersDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Load Balancers"
+					],
+					"operation": [
+						"Update Service"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /load_balancers/{id}/metrics",
 			"name": "operation",
 			"type": "notice",
@@ -2525,6 +3025,31 @@ export const loadBalancersDescription: INodeProperties[] = [
 					"property": "step",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Load Balancers"
+					],
+					"operation": [
+						"Get Metrics For Loadbalancer"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -2683,6 +3208,31 @@ export const loadBalancersDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Load Balancers"
+					],
+					"operation": [
+						"List Load Balancer Actions"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /load_balancers/actions/{id}",
 			"name": "operation",
 			"type": "notice",
@@ -2708,6 +3258,31 @@ export const loadBalancersDescription: INodeProperties[] = [
 			"description": "ID of the Action.",
 			"default": 42,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Load Balancers"
+					],
+					"operation": [
+						"Get Load Balancer Action"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [

@@ -247,6 +247,31 @@ export const placementGroupsDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Placement Groups"
+					],
+					"operation": [
+						"List Placement Groups"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /placement_groups",
 			"name": "operation",
 			"type": "notice",
@@ -349,6 +374,31 @@ export const placementGroupsDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Placement Groups"
+					],
+					"operation": [
+						"Create Placementgroup"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "DELETE /placement_groups/{id}",
 			"name": "operation",
 			"type": "notice",
@@ -386,6 +436,31 @@ export const placementGroupsDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Placement Groups"
+					],
+					"operation": [
+						"Delete Placementgroup"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /placement_groups/{id}",
 			"name": "operation",
 			"type": "notice",
@@ -411,6 +486,31 @@ export const placementGroupsDescription: INodeProperties[] = [
 			"description": "ID of the Placement Group.",
 			"default": 42,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Placement Groups"
+					],
+					"operation": [
+						"Get Placementgroup"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -496,6 +596,31 @@ export const placementGroupsDescription: INodeProperties[] = [
 					"propertyInDotNotation": false,
 					"type": "body",
 					"value": "={{ $value }}"
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Placement Groups"
+					],
+					"operation": [
+						"Replace Placementgroup"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
 				}
 			},
 			"displayOptions": {

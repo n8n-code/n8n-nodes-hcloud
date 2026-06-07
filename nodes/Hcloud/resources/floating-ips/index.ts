@@ -318,6 +318,31 @@ export const floatingIpsDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Floating Ips"
+					],
+					"operation": [
+						"List Floating Ips"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /floating_ips",
 			"name": "operation",
 			"type": "notice",
@@ -498,6 +523,31 @@ export const floatingIpsDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Floating Ips"
+					],
+					"operation": [
+						"Create Floating Ip"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "DELETE /floating_ips/{id}",
 			"name": "operation",
 			"type": "notice",
@@ -535,6 +585,31 @@ export const floatingIpsDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Floating Ips"
+					],
+					"operation": [
+						"Delete Floating Ip"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /floating_ips/{id}",
 			"name": "operation",
 			"type": "notice",
@@ -560,6 +635,31 @@ export const floatingIpsDescription: INodeProperties[] = [
 			"description": "ID of the Floating IP.",
 			"default": 42,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Floating Ips"
+					],
+					"operation": [
+						"Get Floating Ip"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -670,6 +770,31 @@ export const floatingIpsDescription: INodeProperties[] = [
 					"propertyInDotNotation": false,
 					"type": "body",
 					"value": "={{ $value }}"
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Floating Ips"
+					],
+					"operation": [
+						"Replace Floating Ip"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -821,6 +946,31 @@ export const floatingIpsDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Floating Ips"
+					],
+					"operation": [
+						"List Actions For Floating Ip"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /floating_ips/{id}/actions/{action_id}",
 			"name": "operation",
 			"type": "notice",
@@ -864,6 +1014,31 @@ export const floatingIpsDescription: INodeProperties[] = [
 			"description": "ID of the Action.",
 			"default": 42,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Floating Ips"
+					],
+					"operation": [
+						"Get Action For Floating Ip"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -925,6 +1100,31 @@ export const floatingIpsDescription: INodeProperties[] = [
 					"propertyInDotNotation": false,
 					"type": "body",
 					"value": "={{ $value }}"
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Floating Ips"
+					],
+					"operation": [
+						"Assign Floating Ip To Server"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -1028,6 +1228,31 @@ export const floatingIpsDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Floating Ips"
+					],
+					"operation": [
+						"Change Reverse Dns Records For Floating Ip"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /floating_ips/{id}/actions/change_protection",
 			"name": "operation",
 			"type": "notice",
@@ -1091,6 +1316,31 @@ export const floatingIpsDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Floating Ips"
+					],
+					"operation": [
+						"Change Floating Ip Protection"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /floating_ips/{id}/actions/unassign",
 			"name": "operation",
 			"type": "notice",
@@ -1116,6 +1366,31 @@ export const floatingIpsDescription: INodeProperties[] = [
 			"description": "ID of the Floating IP.",
 			"default": 42,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Floating Ips"
+					],
+					"operation": [
+						"Unassign Floating Ip"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -1272,6 +1547,31 @@ export const floatingIpsDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Floating Ips"
+					],
+					"operation": [
+						"List Floating Ip Actions"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /floating_ips/actions/{id}",
 			"name": "operation",
 			"type": "notice",
@@ -1297,6 +1597,31 @@ export const floatingIpsDescription: INodeProperties[] = [
 			"description": "ID of the Action.",
 			"default": 42,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Floating Ips"
+					],
+					"operation": [
+						"Get Floating Ip Action"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [

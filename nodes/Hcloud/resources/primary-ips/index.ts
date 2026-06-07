@@ -343,6 +343,31 @@ export const primaryIpsDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Primary Ips"
+					],
+					"operation": [
+						"List Primary Ips"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /primary_ips",
 			"name": "operation",
 			"type": "notice",
@@ -581,6 +606,31 @@ export const primaryIpsDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Primary Ips"
+					],
+					"operation": [
+						"Create Primary Ip"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "DELETE /primary_ips/{id}",
 			"name": "operation",
 			"type": "notice",
@@ -618,6 +668,31 @@ export const primaryIpsDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Primary Ips"
+					],
+					"operation": [
+						"Delete Primary Ip"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /primary_ips/{id}",
 			"name": "operation",
 			"type": "notice",
@@ -643,6 +718,31 @@ export const primaryIpsDescription: INodeProperties[] = [
 			"description": "ID of the Primary IP.",
 			"default": 42,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Primary Ips"
+					],
+					"operation": [
+						"Get Primary Ip"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -753,6 +853,31 @@ export const primaryIpsDescription: INodeProperties[] = [
 					"propertyInDotNotation": false,
 					"type": "body",
 					"value": "={{ $value }}"
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Primary Ips"
+					],
+					"operation": [
+						"Replace Primary Ip"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -904,6 +1029,31 @@ export const primaryIpsDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Primary Ips"
+					],
+					"operation": [
+						"List Actions For Primary Ip"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /primary_ips/{id}/actions/{action_id}",
 			"name": "operation",
 			"type": "notice",
@@ -947,6 +1097,31 @@ export const primaryIpsDescription: INodeProperties[] = [
 			"description": "ID of the Action.",
 			"default": 42,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Primary Ips"
+					],
+					"operation": [
+						"Get Action For Primary Ip"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -1054,6 +1229,31 @@ export const primaryIpsDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Primary Ips"
+					],
+					"operation": [
+						"Assign Primary Ip To Resource"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /primary_ips/{id}/actions/change_dns_ptr",
 			"name": "operation",
 			"type": "notice",
@@ -1143,6 +1343,31 @@ export const primaryIpsDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Primary Ips"
+					],
+					"operation": [
+						"Change Reverse Dns Records For Primary Ip"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /primary_ips/{id}/actions/change_protection",
 			"name": "operation",
 			"type": "notice",
@@ -1206,6 +1431,31 @@ export const primaryIpsDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Primary Ips"
+					],
+					"operation": [
+						"Change Primary Ip Protection"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /primary_ips/{id}/actions/unassign",
 			"name": "operation",
 			"type": "notice",
@@ -1231,6 +1481,31 @@ export const primaryIpsDescription: INodeProperties[] = [
 			"description": "ID of the Primary IP.",
 			"default": 42,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Primary Ips"
+					],
+					"operation": [
+						"Unassign Primary Ip From Resource"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -1387,6 +1662,31 @@ export const primaryIpsDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Primary Ips"
+					],
+					"operation": [
+						"List Primary Ip Actions"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /primary_ips/actions/{id}",
 			"name": "operation",
 			"type": "notice",
@@ -1412,6 +1712,31 @@ export const primaryIpsDescription: INodeProperties[] = [
 			"description": "ID of the Action.",
 			"default": 42,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Primary Ips"
+					],
+					"operation": [
+						"Get Primary Ip Action"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [

@@ -522,6 +522,31 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Storage Boxes"
+					],
+					"operation": [
+						"List Storage Boxes"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /storage_boxes",
 			"name": "operation",
 			"type": "notice",
@@ -720,6 +745,31 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Storage Boxes"
+					],
+					"operation": [
+						"Create Storage Box"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /storage_boxes/actions",
 			"name": "operation",
 			"type": "notice",
@@ -864,6 +914,31 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Storage Boxes"
+					],
+					"operation": [
+						"List Storage Box Actions"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /storage_boxes/actions/{id}",
 			"name": "operation",
 			"type": "notice",
@@ -889,6 +964,31 @@ export const storageBoxesDescription: INodeProperties[] = [
 			"description": "ID of the Action.",
 			"default": 42,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Storage Boxes"
+					],
+					"operation": [
+						"Get Storage Box Action"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -938,6 +1038,31 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Storage Boxes"
+					],
+					"operation": [
+						"Delete Storage Box"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /storage_boxes/{id}",
 			"name": "operation",
 			"type": "notice",
@@ -963,6 +1088,31 @@ export const storageBoxesDescription: INodeProperties[] = [
 			"description": "ID of the Storage Box.",
 			"default": 42,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Storage Boxes"
+					],
+					"operation": [
+						"Get Storage Box"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -1048,6 +1198,31 @@ export const storageBoxesDescription: INodeProperties[] = [
 					"propertyInDotNotation": false,
 					"type": "body",
 					"value": "={{ $value }}"
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Storage Boxes"
+					],
+					"operation": [
+						"Replace Storage Box"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -1199,6 +1374,31 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Storage Boxes"
+					],
+					"operation": [
+						"List Actions For Storage Box"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /storage_boxes/{id}/actions/change_protection",
 			"name": "operation",
 			"type": "notice",
@@ -1247,6 +1447,31 @@ export const storageBoxesDescription: INodeProperties[] = [
 					"propertyInDotNotation": false,
 					"type": "body",
 					"value": "={{ $value }}"
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Storage Boxes"
+					],
+					"operation": [
+						"Change Protection"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -1324,6 +1549,31 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Storage Boxes"
+					],
+					"operation": [
+						"Change Type"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /storage_boxes/{id}/actions/disable_snapshot_plan",
 			"name": "operation",
 			"type": "notice",
@@ -1349,6 +1599,31 @@ export const storageBoxesDescription: INodeProperties[] = [
 			"description": "ID of the Storage Box.",
 			"default": 42,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Storage Boxes"
+					],
+					"operation": [
+						"Disable Snapshot Plan"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -1526,6 +1801,31 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Storage Boxes"
+					],
+					"operation": [
+						"Enable Snapshot Plan"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /storage_boxes/{id}/actions/reset_password",
 			"name": "operation",
 			"type": "notice",
@@ -1589,6 +1889,31 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Storage Boxes"
+					],
+					"operation": [
+						"Reset Storage Box Password"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /storage_boxes/{id}/actions/rollback_snapshot",
 			"name": "operation",
 			"type": "notice",
@@ -1638,6 +1963,31 @@ export const storageBoxesDescription: INodeProperties[] = [
 					"propertyInDotNotation": false,
 					"type": "body",
 					"value": "={{ $value }}"
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Storage Boxes"
+					],
+					"operation": [
+						"Rollback Snapshot"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -1814,6 +2164,31 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Storage Boxes"
+					],
+					"operation": [
+						"Update Storage Box Access Settings"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /storage_boxes/{id}/actions/{action_id}",
 			"name": "operation",
 			"type": "notice",
@@ -1857,6 +2232,31 @@ export const storageBoxesDescription: INodeProperties[] = [
 			"description": "ID of the Action.",
 			"default": 42,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Storage Boxes"
+					],
+					"operation": [
+						"Get Action For Storage Box"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -1917,6 +2317,31 @@ export const storageBoxesDescription: INodeProperties[] = [
 					"property": "path",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Storage Boxes"
+					],
+					"operation": [
+						"List Folders Of Storage Box"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -2068,6 +2493,31 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Storage Boxes"
+					],
+					"operation": [
+						"List Snapshots"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /storage_boxes/{id}/snapshots",
 			"name": "operation",
 			"type": "notice",
@@ -2155,6 +2605,31 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Storage Boxes"
+					],
+					"operation": [
+						"Create Snapshot"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "DELETE /storage_boxes/{id}/snapshots/{snapshot_id}",
 			"name": "operation",
 			"type": "notice",
@@ -2210,6 +2685,31 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Storage Boxes"
+					],
+					"operation": [
+						"Delete Snapshot"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /storage_boxes/{id}/snapshots/{snapshot_id}",
 			"name": "operation",
 			"type": "notice",
@@ -2253,6 +2753,31 @@ export const storageBoxesDescription: INodeProperties[] = [
 			"description": "ID of the Storage Box Snapshot.",
 			"default": 42,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Storage Boxes"
+					],
+					"operation": [
+						"Get Snapshot"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -2356,6 +2881,31 @@ export const storageBoxesDescription: INodeProperties[] = [
 					"propertyInDotNotation": false,
 					"type": "body",
 					"value": "={{ JSON.parse($value) }}"
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Storage Boxes"
+					],
+					"operation": [
+						"Replace Snapshot"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -2493,6 +3043,31 @@ export const storageBoxesDescription: INodeProperties[] = [
 					"property": "username",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Storage Boxes"
+					],
+					"operation": [
+						"List Subaccounts"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -2695,6 +3270,31 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Storage Boxes"
+					],
+					"operation": [
+						"Create Subaccount"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "DELETE /storage_boxes/{id}/subaccounts/{subaccount_id}",
 			"name": "operation",
 			"type": "notice",
@@ -2750,6 +3350,31 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Storage Boxes"
+					],
+					"operation": [
+						"Delete Subaccount"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /storage_boxes/{id}/subaccounts/{subaccount_id}",
 			"name": "operation",
 			"type": "notice",
@@ -2793,6 +3418,31 @@ export const storageBoxesDescription: INodeProperties[] = [
 			"description": "ID of the Storage Box Subaccount.",
 			"default": 42,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Storage Boxes"
+					],
+					"operation": [
+						"Get Subaccount"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -2935,6 +3585,31 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Storage Boxes"
+					],
+					"operation": [
+						"Replace Subaccount"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /storage_boxes/{id}/subaccounts/{subaccount_id}/actions/change_home_directory",
 			"name": "operation",
 			"type": "notice",
@@ -3016,6 +3691,31 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Storage Boxes"
+					],
+					"operation": [
+						"Change Home Directory"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /storage_boxes/{id}/subaccounts/{subaccount_id}/actions/reset_subaccount_password",
 			"name": "operation",
 			"type": "notice",
@@ -3083,6 +3783,31 @@ export const storageBoxesDescription: INodeProperties[] = [
 					"propertyInDotNotation": false,
 					"type": "body",
 					"value": "={{ $value }}"
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Storage Boxes"
+					],
+					"operation": [
+						"Reset Storage Box Subaccount Password"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -3263,6 +3988,31 @@ export const storageBoxesDescription: INodeProperties[] = [
 					"propertyInDotNotation": false,
 					"type": "body",
 					"value": "={{ $value }}"
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Storage Boxes"
+					],
+					"operation": [
+						"Update Storage Box Subaccount Access Settings"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
 				}
 			},
 			"displayOptions": {

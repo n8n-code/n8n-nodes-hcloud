@@ -136,6 +136,31 @@ export const storageBoxTypesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Storage Box Types"
+					],
+					"operation": [
+						"List Storage Box Types"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /storage_box_types/{id}",
 			"name": "operation",
 			"type": "notice",
@@ -161,6 +186,31 @@ export const storageBoxTypesDescription: INodeProperties[] = [
 			"description": "ID of the Storage Box Type.",
 			"default": 42,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Storage Box Types"
+					],
+					"operation": [
+						"Get Storage Box Type"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [

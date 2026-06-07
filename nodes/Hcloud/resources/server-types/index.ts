@@ -136,6 +136,31 @@ export const serverTypesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Server Types"
+					],
+					"operation": [
+						"List Server Types"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /server_types/{id}",
 			"name": "operation",
 			"type": "notice",
@@ -161,6 +186,31 @@ export const serverTypesDescription: INodeProperties[] = [
 			"description": "ID of the Server Type.",
 			"default": 42,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Server Types"
+					],
+					"operation": [
+						"Get Server Type"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [

@@ -247,6 +247,31 @@ export const sshKeysDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Ssh Keys"
+					],
+					"operation": [
+						"List Ssh Keys"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /ssh_keys",
 			"name": "operation",
 			"type": "notice",
@@ -343,6 +368,31 @@ export const sshKeysDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Ssh Keys"
+					],
+					"operation": [
+						"Create Ssh Key"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "DELETE /ssh_keys/{id}",
 			"name": "operation",
 			"type": "notice",
@@ -380,6 +430,31 @@ export const sshKeysDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Ssh Keys"
+					],
+					"operation": [
+						"Delete Ssh Key"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /ssh_keys/{id}",
 			"name": "operation",
 			"type": "notice",
@@ -405,6 +480,31 @@ export const sshKeysDescription: INodeProperties[] = [
 			"description": "ID of the SSH Key.",
 			"default": 42,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Ssh Keys"
+					],
+					"operation": [
+						"Get Ssh Key"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -490,6 +590,31 @@ export const sshKeysDescription: INodeProperties[] = [
 					"propertyInDotNotation": false,
 					"type": "body",
 					"value": "={{ $value }}"
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Ssh Keys"
+					],
+					"operation": [
+						"Replace Ssh Key"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
 				}
 			},
 			"displayOptions": {

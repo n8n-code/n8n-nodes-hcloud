@@ -497,6 +497,31 @@ export const zonesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Zones"
+					],
+					"operation": [
+						"List Zones"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /zones",
 			"name": "operation",
 			"type": "notice",
@@ -703,6 +728,31 @@ export const zonesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Zones"
+					],
+					"operation": [
+						"Create Zone"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /zones/actions",
 			"name": "operation",
 			"type": "notice",
@@ -847,6 +897,31 @@ export const zonesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Zones"
+					],
+					"operation": [
+						"List Zone Actions"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /zones/actions/{id}",
 			"name": "operation",
 			"type": "notice",
@@ -872,6 +947,31 @@ export const zonesDescription: INodeProperties[] = [
 			"description": "ID of the Action.",
 			"default": 42,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Zones"
+					],
+					"operation": [
+						"Get Zone Action"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -921,6 +1021,31 @@ export const zonesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Zones"
+					],
+					"operation": [
+						"Delete Zone"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /zones/{id_or_name}",
 			"name": "operation",
 			"type": "notice",
@@ -946,6 +1071,31 @@ export const zonesDescription: INodeProperties[] = [
 			"description": "ID or Name of the Zone.",
 			"default": "",
 			"type": "string",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Zones"
+					],
+					"operation": [
+						"Get Zone"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -1006,6 +1156,31 @@ export const zonesDescription: INodeProperties[] = [
 					"propertyInDotNotation": false,
 					"type": "body",
 					"value": "={{ JSON.parse($value) }}"
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Zones"
+					],
+					"operation": [
+						"Replace Zone"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -1157,6 +1332,31 @@ export const zonesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Zones"
+					],
+					"operation": [
+						"List Actions For Zone"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /zones/{id_or_name}/actions/change_primary_nameservers",
 			"name": "operation",
 			"type": "notice",
@@ -1220,6 +1420,31 @@ export const zonesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Zones"
+					],
+					"operation": [
+						"Change Zones Primary Nameservers"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /zones/{id_or_name}/actions/change_protection",
 			"name": "operation",
 			"type": "notice",
@@ -1268,6 +1493,31 @@ export const zonesDescription: INodeProperties[] = [
 					"propertyInDotNotation": false,
 					"type": "body",
 					"value": "={{ $value }}"
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Zones"
+					],
+					"operation": [
+						"Change Zones Protection"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -1345,6 +1595,31 @@ export const zonesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Zones"
+					],
+					"operation": [
+						"Change Zones Default Ttl"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /zones/{id_or_name}/actions/import_zonefile",
 			"name": "operation",
 			"type": "notice",
@@ -1408,6 +1683,31 @@ export const zonesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Zones"
+					],
+					"operation": [
+						"Import Zone File"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /zones/{id_or_name}/actions/{action_id}",
 			"name": "operation",
 			"type": "notice",
@@ -1451,6 +1751,31 @@ export const zonesDescription: INodeProperties[] = [
 			"description": "ID of the Action.",
 			"default": 42,
 			"type": "number",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Zones"
+					],
+					"operation": [
+						"Get Action For Zone"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -1636,6 +1961,31 @@ export const zonesDescription: INodeProperties[] = [
 					"property": "per_page",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Zones"
+					],
+					"operation": [
+						"List Rrsets"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -1881,6 +2231,31 @@ export const zonesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Zones"
+					],
+					"operation": [
+						"Create Rrset"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "DELETE /zones/{id_or_name}/rrsets/{rr_name}/{rr_type}",
 			"name": "operation",
 			"type": "notice",
@@ -2020,6 +2395,31 @@ export const zonesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Zones"
+					],
+					"operation": [
+						"Delete Rrset"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /zones/{id_or_name}/rrsets/{rr_name}/{rr_type}",
 			"name": "operation",
 			"type": "notice",
@@ -2147,6 +2547,31 @@ export const zonesDescription: INodeProperties[] = [
 					"value": "TXT"
 				}
 			],
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Zones"
+					],
+					"operation": [
+						"Get Rrset"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -2309,6 +2734,31 @@ export const zonesDescription: INodeProperties[] = [
 					"propertyInDotNotation": false,
 					"type": "body",
 					"value": "={{ JSON.parse($value) }}"
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Zones"
+					],
+					"operation": [
+						"Replace Rrset"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -2513,6 +2963,31 @@ export const zonesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Zones"
+					],
+					"operation": [
+						"Add Records To Rrset"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /zones/{id_or_name}/rrsets/{rr_name}/{rr_type}/actions/change_protection",
 			"name": "operation",
 			"type": "notice",
@@ -2664,6 +3139,31 @@ export const zonesDescription: INodeProperties[] = [
 					"propertyInDotNotation": false,
 					"type": "body",
 					"value": "={{ $value }}"
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Zones"
+					],
+					"operation": [
+						"Change Rrsets Protection"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -2843,6 +3343,31 @@ export const zonesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Zones"
+					],
+					"operation": [
+						"Change Rrsets Ttl"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /zones/{id_or_name}/rrsets/{rr_name}/{rr_type}/actions/remove_records",
 			"name": "operation",
 			"type": "notice",
@@ -2994,6 +3519,31 @@ export const zonesDescription: INodeProperties[] = [
 					"propertyInDotNotation": false,
 					"type": "body",
 					"value": "={{ JSON.parse($value) }}"
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Zones"
+					],
+					"operation": [
+						"Remove Records From Rrset"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -3173,6 +3723,31 @@ export const zonesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Zones"
+					],
+					"operation": [
+						"Set Records Of Rrset"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /zones/{id_or_name}/rrsets/{rr_name}/{rr_type}/actions/update_records",
 			"name": "operation",
 			"type": "notice",
@@ -3338,6 +3913,31 @@ export const zonesDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Zones"
+					],
+					"operation": [
+						"Update Records Of Rrset"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /zones/{id_or_name}/zonefile",
 			"name": "operation",
 			"type": "notice",
@@ -3363,6 +3963,31 @@ export const zonesDescription: INodeProperties[] = [
 			"description": "ID or Name of the Zone.",
 			"default": "",
 			"type": "string",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Zones"
+					],
+					"operation": [
+						"Export Zone File"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Bearer Token",
+			"name": "security_apitoken",
+			"type": "string",
+			"default": "",
+			"description": "HTTP bearer authentication for APIToken",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"Authorization": "={{ 'Bearer ' + $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [

@@ -54,10 +54,13 @@ export class HcloudApi implements ICredentialType {
 	};
 
 	test: ICredentialTestRequest = {
-		request: {
-			baseURL: '={{$credentials.url}}',
-			url: '/',
-			method: 'GET',
-		},
-	};
+			"request": {
+				"baseURL": "={{ $credentials.baseUrl }}",
+				"url": "/actions",
+				"method": "GET",
+				"headers": {
+					"Authorization": "={{ \"Bearer \" + $credentials.accessToken }}"
+				}
+			}
+		};
 }

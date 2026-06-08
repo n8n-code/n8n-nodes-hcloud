@@ -25,7 +25,7 @@ export class Hcloud implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'hcloud',
 		name: 'N8nDevHcloud',
-		icon: { light: 'file:./hcloud.svg', dark: 'file:./hcloud.dark.svg' },
+		icon: { light: 'file:./hcloud.png', dark: 'file:./hcloud.dark.png' },
 		group: ['input'],
 		version: 1,
 		subtitle: '={{\$parameter["operation"] + ": " + \$parameter["resource"]}}',

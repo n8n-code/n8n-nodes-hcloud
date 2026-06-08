@@ -10,7 +10,7 @@ export class HcloudApi implements ICredentialType {
 
 	displayName = 'hcloud API';
 
-	icon: Icon = { light: 'file:../nodes/Hcloud/hcloud.svg', dark: 'file:../nodes/Hcloud/hcloud.dark.svg' };
+	icon: Icon = { light: 'file:../nodes/Hcloud/hcloud.png', dark: 'file:../nodes/Hcloud/hcloud.dark.png' };
 
 	documentationUrl = '';
 

@@ -418,7 +418,7 @@ export const placementGroupsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Placement Group.",
@@ -480,7 +480,7 @@ export const placementGroupsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Placement Group.",
@@ -542,7 +542,7 @@ export const placementGroupsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Placement Group.",

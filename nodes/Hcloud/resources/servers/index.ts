@@ -147,8 +147,8 @@ export const serversDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "Change Reverse Dns Entry For This Server",
-					"value": "Change Reverse Dns Entry For This Server",
+					"name": "Change Reverse DNS Entry For This Server",
+					"value": "Change Reverse DNS Entry For This Server",
 					"action": "Change reverse DNS entry for this Server",
 					"description": "Changes the hostname that will appear when getting the hostname belonging to the primary IPs (IPv4 and IPv6) of this Server.\n\nFloating IPs assigned to the Server are not affected by this.\n",
 					"routing": {
@@ -905,7 +905,7 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Ssh Keys",
+			"displayName": "SSH Keys",
 			"name": "ssh_keys",
 			"type": "json",
 			"default": "[\n  \"my-ssh-key\"\n]",
@@ -1049,7 +1049,7 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Server.",
@@ -1111,7 +1111,7 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Server.",
@@ -1173,7 +1173,7 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Server.",
@@ -1285,7 +1285,7 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Server.",
@@ -1447,7 +1447,7 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Server.",
@@ -1465,7 +1465,7 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Action Id",
+			"displayName": "Action ID",
 			"name": "action_id",
 			"required": true,
 			"description": "ID of the Action.",
@@ -1527,7 +1527,7 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Server.",
@@ -1615,7 +1615,7 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Server.",
@@ -1703,7 +1703,7 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Server.",
@@ -1866,7 +1866,7 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Server.",
@@ -1974,13 +1974,13 @@ export const serversDescription: INodeProperties[] = [
 						"Servers"
 					],
 					"operation": [
-						"Change Reverse Dns Entry For This Server"
+						"Change Reverse DNS Entry For This Server"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Server.",
@@ -1992,14 +1992,14 @@ export const serversDescription: INodeProperties[] = [
 						"Servers"
 					],
 					"operation": [
-						"Change Reverse Dns Entry For This Server"
+						"Change Reverse DNS Entry For This Server"
 					]
 				}
 			}
 		},
 		{
 			"required": true,
-			"displayName": "Dns Ptr",
+			"displayName": "DNS Ptr",
 			"name": "dns_ptr",
 			"type": "string",
 			"default": "server01.example.com",
@@ -2018,7 +2018,7 @@ export const serversDescription: INodeProperties[] = [
 						"Servers"
 					],
 					"operation": [
-						"Change Reverse Dns Entry For This Server"
+						"Change Reverse DNS Entry For This Server"
 					]
 				}
 			}
@@ -2044,7 +2044,7 @@ export const serversDescription: INodeProperties[] = [
 						"Servers"
 					],
 					"operation": [
-						"Change Reverse Dns Entry For This Server"
+						"Change Reverse DNS Entry For This Server"
 					]
 				}
 			}
@@ -2069,7 +2069,7 @@ export const serversDescription: INodeProperties[] = [
 						"Servers"
 					],
 					"operation": [
-						"Change Reverse Dns Entry For This Server"
+						"Change Reverse DNS Entry For This Server"
 					]
 				}
 			}
@@ -2094,7 +2094,7 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Server.",
@@ -2206,7 +2206,7 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Server.",
@@ -2320,7 +2320,7 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Server.",
@@ -2467,7 +2467,7 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Server.",
@@ -2555,7 +2555,7 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Server.",
@@ -2617,7 +2617,7 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Server.",
@@ -2679,7 +2679,7 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Server.",
@@ -2741,7 +2741,7 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Server.",
@@ -2803,7 +2803,7 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Server.",
@@ -2821,7 +2821,7 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Ssh Keys",
+			"displayName": "SSH Keys",
 			"name": "ssh_keys",
 			"type": "json",
 			"default": "[\n  2323\n]",
@@ -2921,7 +2921,7 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Server.",
@@ -2983,7 +2983,7 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Server.",
@@ -3045,7 +3045,7 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Server.",
@@ -3107,7 +3107,7 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Server.",
@@ -3220,7 +3220,7 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Server.",
@@ -3282,7 +3282,7 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Server.",
@@ -3344,7 +3344,7 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Server.",
@@ -3406,7 +3406,7 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Server.",
@@ -3468,7 +3468,7 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Server.",
@@ -3530,7 +3530,7 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Server.",
@@ -3695,7 +3695,7 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"description": "Filter the actions by ID. Can be used multiple times. The response will only contain\nactions matching the specified IDs.\n",
 			"default": "[\n  42\n]",
@@ -3864,7 +3864,7 @@ export const serversDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Action.",

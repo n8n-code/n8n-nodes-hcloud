@@ -694,7 +694,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Ssh Keys",
+			"displayName": "SSH Keys",
 			"name": "ssh_keys",
 			"type": "json",
 			"default": "[\n  \"ssh-rsa AAAjjk76kgf...Xt\"\n]",
@@ -789,7 +789,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"description": "Filter the actions by ID. Can be used multiple times. The response will only contain\nactions matching the specified IDs.\n",
 			"default": "[\n  42\n]",
@@ -958,7 +958,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Action.",
@@ -1020,7 +1020,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Storage Box.",
@@ -1082,7 +1082,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Storage Box.",
@@ -1144,7 +1144,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Storage Box.",
@@ -1306,7 +1306,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Storage Box.",
@@ -1418,7 +1418,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Storage Box.",
@@ -1505,7 +1505,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Storage Box.",
@@ -1593,7 +1593,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Storage Box.",
@@ -1655,7 +1655,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Storage Box.",
@@ -1845,7 +1845,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Storage Box.",
@@ -1933,7 +1933,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Storage Box.",
@@ -2021,7 +2021,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Storage Box.",
@@ -2114,7 +2114,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Ssh Enabled",
+			"displayName": "SSH Enabled",
 			"name": "ssh_enabled",
 			"type": "boolean",
 			"default": true,
@@ -2208,7 +2208,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Storage Box.",
@@ -2226,7 +2226,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Action Id",
+			"displayName": "Action ID",
 			"name": "action_id",
 			"required": true,
 			"description": "ID of the Action.",
@@ -2288,7 +2288,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Storage Box.",
@@ -2375,7 +2375,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Storage Box.",
@@ -2537,7 +2537,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Storage Box.",
@@ -2649,7 +2649,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Storage Box.",
@@ -2667,7 +2667,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Snapshot Id",
+			"displayName": "Snapshot ID",
 			"name": "snapshot_id",
 			"required": true,
 			"description": "ID of the Storage Box Snapshot.",
@@ -2729,7 +2729,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Storage Box.",
@@ -2747,7 +2747,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Snapshot Id",
+			"displayName": "Snapshot ID",
 			"name": "snapshot_id",
 			"required": true,
 			"description": "ID of the Storage Box Snapshot.",
@@ -2809,7 +2809,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Storage Box.",
@@ -2827,7 +2827,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Snapshot Id",
+			"displayName": "Snapshot ID",
 			"name": "snapshot_id",
 			"required": true,
 			"description": "ID of the Storage Box Snapshot.",
@@ -2939,7 +2939,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Storage Box.",
@@ -3101,7 +3101,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Storage Box.",
@@ -3314,7 +3314,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Storage Box.",
@@ -3332,7 +3332,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Subaccount Id",
+			"displayName": "Subaccount ID",
 			"name": "subaccount_id",
 			"required": true,
 			"description": "ID of the Storage Box Subaccount.",
@@ -3394,7 +3394,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Storage Box.",
@@ -3412,7 +3412,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Subaccount Id",
+			"displayName": "Subaccount ID",
 			"name": "subaccount_id",
 			"required": true,
 			"description": "ID of the Storage Box Subaccount.",
@@ -3474,7 +3474,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Storage Box.",
@@ -3492,7 +3492,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Subaccount Id",
+			"displayName": "Subaccount ID",
 			"name": "subaccount_id",
 			"required": true,
 			"description": "ID of the Storage Box Subaccount.",
@@ -3629,7 +3629,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Storage Box.",
@@ -3647,7 +3647,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Subaccount Id",
+			"displayName": "Subaccount ID",
 			"name": "subaccount_id",
 			"required": true,
 			"description": "ID of the Storage Box Subaccount.",
@@ -3735,7 +3735,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Storage Box.",
@@ -3753,7 +3753,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Subaccount Id",
+			"displayName": "Subaccount ID",
 			"name": "subaccount_id",
 			"required": true,
 			"description": "ID of the Storage Box Subaccount.",
@@ -3841,7 +3841,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Storage Box.",
@@ -3859,7 +3859,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Subaccount Id",
+			"displayName": "Subaccount ID",
 			"name": "subaccount_id",
 			"required": true,
 			"description": "ID of the Storage Box Subaccount.",
@@ -3952,7 +3952,7 @@ export const storageBoxesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Ssh Enabled",
+			"displayName": "SSH Enabled",
 			"name": "ssh_enabled",
 			"type": "boolean",
 			"default": true,

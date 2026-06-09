@@ -147,8 +147,8 @@ export const loadBalancersDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "Change Reverse Dns Entry For This Load Balancer",
-					"value": "Change Reverse Dns Entry For This Load Balancer",
+					"name": "Change Reverse DNS Entry For This Load Balancer",
+					"value": "Change Reverse DNS Entry For This Load Balancer",
 					"action": "Change reverse DNS entry for this Load Balancer",
 					"description": "Changes the hostname that will appear when getting the hostname belonging to the public IPs (IPv4 and IPv6) of this Load Balancer.\n\nFloating IPs assigned to the Server are not affected by this.\n",
 					"routing": {
@@ -778,7 +778,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Load Balancer.",
@@ -840,7 +840,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Load Balancer.",
@@ -902,7 +902,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Load Balancer.",
@@ -1014,7 +1014,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Load Balancer.",
@@ -1176,7 +1176,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Load Balancer.",
@@ -1194,7 +1194,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Action Id",
+			"displayName": "Action ID",
 			"name": "action_id",
 			"required": true,
 			"description": "ID of the Action.",
@@ -1256,7 +1256,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Load Balancer.",
@@ -1326,7 +1326,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Http",
+			"displayName": "HTTP",
 			"name": "http",
 			"type": "json",
 			"default": "{\n  \"certificates\": [\n    897\n  ],\n  \"cookie_lifetime\": 300,\n  \"cookie_name\": \"HCLBSTICKY\",\n  \"redirect_http\": true,\n  \"sticky_sessions\": true\n}",
@@ -1385,11 +1385,11 @@ export const loadBalancersDescription: INodeProperties[] = [
 			"description": "Protocol of the Load Balancer.",
 			"options": [
 				{
-					"name": "Http",
+					"name": "HTTP",
 					"value": "http"
 				},
 				{
-					"name": "Https",
+					"name": "HTTPS",
 					"value": "https"
 				},
 				{
@@ -1487,7 +1487,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Load Balancer.",
@@ -1689,7 +1689,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Load Balancer.",
@@ -1827,7 +1827,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Load Balancer.",
@@ -1919,13 +1919,13 @@ export const loadBalancersDescription: INodeProperties[] = [
 						"Load Balancers"
 					],
 					"operation": [
-						"Change Reverse Dns Entry For This Load Balancer"
+						"Change Reverse DNS Entry For This Load Balancer"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Load Balancer.",
@@ -1937,14 +1937,14 @@ export const loadBalancersDescription: INodeProperties[] = [
 						"Load Balancers"
 					],
 					"operation": [
-						"Change Reverse Dns Entry For This Load Balancer"
+						"Change Reverse DNS Entry For This Load Balancer"
 					]
 				}
 			}
 		},
 		{
 			"required": true,
-			"displayName": "Dns Ptr",
+			"displayName": "DNS Ptr",
 			"name": "dns_ptr",
 			"type": "string",
 			"default": "lb1.example.com",
@@ -1963,7 +1963,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 						"Load Balancers"
 					],
 					"operation": [
-						"Change Reverse Dns Entry For This Load Balancer"
+						"Change Reverse DNS Entry For This Load Balancer"
 					]
 				}
 			}
@@ -1989,7 +1989,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 						"Load Balancers"
 					],
 					"operation": [
-						"Change Reverse Dns Entry For This Load Balancer"
+						"Change Reverse DNS Entry For This Load Balancer"
 					]
 				}
 			}
@@ -2014,7 +2014,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 						"Load Balancers"
 					],
 					"operation": [
-						"Change Reverse Dns Entry For This Load Balancer"
+						"Change Reverse DNS Entry For This Load Balancer"
 					]
 				}
 			}
@@ -2039,7 +2039,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Load Balancer.",
@@ -2126,7 +2126,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Load Balancer.",
@@ -2214,7 +2214,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Load Balancer.",
@@ -2302,7 +2302,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Load Balancer.",
@@ -2390,7 +2390,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Load Balancer.",
@@ -2452,7 +2452,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Load Balancer.",
@@ -2514,7 +2514,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Load Balancer.",
@@ -2691,7 +2691,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Load Balancer.",
@@ -2759,7 +2759,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Http",
+			"displayName": "HTTP",
 			"name": "http",
 			"type": "json",
 			"default": "{\n  \"certificates\": [\n    897\n  ],\n  \"cookie_lifetime\": 300,\n  \"cookie_name\": \"HCLBSTICKY\",\n  \"redirect_http\": true,\n  \"sticky_sessions\": true\n}",
@@ -2817,11 +2817,11 @@ export const loadBalancersDescription: INodeProperties[] = [
 			"description": "Protocol of the Load Balancer.",
 			"options": [
 				{
-					"name": "Http",
+					"name": "HTTP",
 					"value": "http"
 				},
 				{
-					"name": "Https",
+					"name": "HTTPS",
 					"value": "https"
 				},
 				{
@@ -2918,7 +2918,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Load Balancer.",
@@ -3083,7 +3083,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"description": "Filter the actions by ID. Can be used multiple times. The response will only contain\nactions matching the specified IDs.\n",
 			"default": "[\n  42\n]",
@@ -3252,7 +3252,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Action.",

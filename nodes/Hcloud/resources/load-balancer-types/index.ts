@@ -180,7 +180,7 @@ export const loadBalancerTypesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Load Balancer Type.",

@@ -53,29 +53,352 @@ That's it. No configuration files. No code. It just works.
 
 ## Resources
 
-| Resource | Operations |
-|----------|------------|
-| Actions | GET Get multiple Actions, GET Get an Action |
-| Certificates | GET List Certificates, POST Create a Certificate, DELETE Delete a Certificate, GET Get a Certificate, PUT Update a Certificate, GET List Actions for a Certificate, GET Get an Action for a Certificate, POST Retry Issuance or Renewal, GET List Actions, GET Get an Action |
-| Datacenters | GET List Data Centers, GET Get a Data Center |
-| Firewalls | GET List Firewalls, POST Create a Firewall, DELETE Delete a Firewall, GET Get a Firewall, PUT Update a Firewall, GET List Actions for a Firewall, GET Get an Action for a Firewall, POST Apply to Resources, POST Remove from Resources, POST Set Rules, GET List Actions, GET Get an Action |
-| Floating Ips | GET List Floating IPs, POST Create a Floating IP, DELETE Delete a Floating IP, GET Get a Floating IP, PUT Update a Floating IP, GET List Actions for a Floating IP, GET Get an Action for a Floating IP, POST Assign a Floating IP to a Server, POST Change reverse DNS records for a Floating IP, POST Change Floating IP Protection, POST Unassign a Floating IP, GET List Actions, GET Get an Action |
-| Images | GET List Images, DELETE Delete an Image, GET Get an Image, PUT Update an Image, GET List Actions for an Image, GET Get an Action for an Image, POST Change Image Protection, GET List Actions, GET Get an Action |
-| Isos | GET List ISOs, GET Get an ISO |
-| Load Balancer Types | GET List Load Balancer Types, GET Get a Load Balancer Type |
-| Load Balancers | GET List Load Balancers, POST Create a Load Balancer, DELETE Delete a Load Balancer, GET Get a Load Balancer, PUT Update a Load Balancer, GET List Actions for a Load Balancer, GET Get an Action for a Load Balancer, POST Add Service, POST Add Target, POST Attach a Load Balancer to a Network, POST Change Algorithm, POST Change reverse DNS entry for this Load Balancer, POST Change Load Balancer Protection, POST Change the Type of a Load Balancer, POST Delete Service, POST Detach a Load Balancer from a Network, POST Disable the public interface of a Load Balancer, POST Enable the public interface of a Load Balancer, POST Remove Target, POST Update Service, GET Get Metrics for a LoadBalancer, GET List Actions, GET Get an Action |
-| Locations | GET List Locations, GET Get a Location |
-| Networks | GET List Networks, POST Create a Network, DELETE Delete a Network, GET Get a Network, PUT Update a Network, GET List Actions for a Network, GET Get an Action for a Network, POST Add a route to a Network, POST Add a subnet to a Network, POST Change IP range of a Network, POST Change Network Protection, POST Delete a route from a Network, POST Delete a subnet from a Network, GET List Actions, GET Get an Action |
-| Placement Groups | GET List Placement Groups, POST Create a PlacementGroup, DELETE Delete a PlacementGroup, GET Get a PlacementGroup, PUT Update a PlacementGroup |
-| Pricing | GET Get all prices |
-| Primary Ips | GET List Primary IPs, POST Create a Primary IP, DELETE Delete a Primary IP, GET Get a Primary IP, PUT Update a Primary IP, GET List Actions for a Primary IP, GET Get an Action for a Primary IP, POST Assign a Primary IP to a resource, POST Change reverse DNS records for a Primary IP, POST Change Primary IP Protection, POST Unassign a Primary IP from a resource, GET List Actions, GET Get an Action |
-| Server Types | GET List Server Types, GET Get a Server Type |
-| Servers | GET List Servers, POST Create a Server, DELETE Delete a Server, GET Get a Server, PUT Update a Server, GET List Actions for a Server, GET Get an Action for a Server, POST Add a Server to a Placement Group, POST Attach an ISO to a Server, POST Attach a Server to a Network, POST Change alias IPs of a Network, POST Change reverse DNS entry for this Server, POST Change Server Protection, POST Change the Type of a Server, POST Create Image from a Server, POST Detach a Server from a Network, POST Detach an ISO from a Server, POST Disable Backups for a Server, POST Disable Rescue Mode for a Server, POST Enable and Configure Backups for a Server, POST Enable Rescue Mode for a Server, POST Power off a Server, POST Power on a Server, POST Soft-reboot a Server, POST Rebuild a Server from an Image, POST Remove from Placement Group, POST Request Console for a Server, POST Reset a Server, POST Reset root Password of a Server, POST Shutdown a Server, GET Get Metrics for a Server, GET List Actions, GET Get an Action |
-| Ssh Keys | GET List SSH keys, POST Create an SSH key, DELETE Delete an SSH key, GET Get a SSH key, PUT Update an SSH key |
-| Storage Box Types | GET List Storage Box Types, GET Get a Storage Box Type |
-| Storage Boxes | GET List Storage Boxes, POST Create a Storage Box, GET List Actions, GET Get an Action, DELETE Delete a Storage Box, GET Get a Storage Box, PUT Update a Storage Box, GET List Actions for a Storage Box, POST Change Protection, POST Change Type, POST Disable Snapshot Plan, POST Enable Snapshot Plan, POST Reset Password, POST Rollback Snapshot, POST Update Access Settings, GET Get an Action for a Storage Box, GET List folders of a Storage Box, GET List Snapshots, POST Create a Snapshot, DELETE Delete a Snapshot, GET Get a Snapshot, PUT Update a Snapshot, GET List Subaccounts, POST Create a Subaccount, DELETE Delete a Subaccount, GET Get a Subaccount, PUT Update a Subaccount, POST Change Home Directory, POST Reset Password, POST Update Access Settings |
-| Volumes | GET List Volumes, POST Create a Volume, DELETE Delete a Volume, GET Get a Volume, PUT Update a Volume, GET List Actions for a Volume, GET Get an Action for a Volume, POST Attach Volume to a Server, POST Change Volume Protection, POST Detach Volume, POST Resize Volume, GET List Actions, GET Get an Action |
-| Zones | GET List Zones, POST Create a Zone, GET List Actions, GET Get an Action, DELETE Delete a Zone, GET Get a Zone, PUT Update a Zone, GET List Actions for a Zone, POST Change a Zone's Primary Nameservers, POST Change a Zone's Protection, POST Change a Zone's Default TTL, POST Import a Zone file, GET Get an Action for a Zone, GET List RRSets, POST Create an RRSet, DELETE Delete an RRSet, GET Get an RRSet, PUT Update an RRSet, POST Add Records to an RRSet, POST Change an RRSet's Protection, POST Change an RRSet's TTL, POST Remove Records from an RRSet, POST Set Records of an RRSet, POST Update Records of an RRSet, GET Export a Zone file |
+<details>
+<summary><b>Actions</b> (2 operations)</summary>
+
+- Get multiple Actions
+- Get an Action
+
+</details>
+
+<details>
+<summary><b>Certificates</b> (10 operations)</summary>
+
+- Get List Certificates
+- Post Create a Certificate
+- Delete a Certificate
+- Get a Certificate
+- Put Update a Certificate
+- Get List Actions for a Certificate
+- Get an Action for a Certificate
+- Post Retry Issuance or Renewal
+- Get List Actions
+- Get an Action
+
+</details>
+
+<details>
+<summary><b>Datacenters</b> (2 operations)</summary>
+
+- Get List Data Centers
+- Get a Data Center
+
+</details>
+
+<details>
+<summary><b>Firewalls</b> (12 operations)</summary>
+
+- Get List Firewalls
+- Post Create a Firewall
+- Delete a Firewall
+- Get a Firewall
+- Put Update a Firewall
+- Get List Actions for a Firewall
+- Get an Action for a Firewall
+- Post Apply to Resources
+- Post Remove from Resources
+- Post Set Rules
+- Get List Actions
+- Get an Action
+
+</details>
+
+<details>
+<summary><b>Floating Ips</b> (13 operations)</summary>
+
+- Get List Floating IPs
+- Post Create a Floating IP
+- Delete a Floating IP
+- Get a Floating IP
+- Put Update a Floating IP
+- Get List Actions for a Floating IP
+- Get an Action for a Floating IP
+- Post Assign a Floating IP to a Server
+- Post Change reverse DNS records for a Floating IP
+- Post Change Floating IP Protection
+- Post Unassign a Floating IP
+- Get List Actions
+- Get an Action
+
+</details>
+
+<details>
+<summary><b>Images</b> (9 operations)</summary>
+
+- Get List Images
+- Delete an Image
+- Get an Image
+- Put Update an Image
+- Get List Actions for an Image
+- Get an Action for an Image
+- Post Change Image Protection
+- Get List Actions
+- Get an Action
+
+</details>
+
+<details>
+<summary><b>Isos</b> (2 operations)</summary>
+
+- Get List ISOs
+- Get an ISO
+
+</details>
+
+<details>
+<summary><b>Load Balancer Types</b> (2 operations)</summary>
+
+- Get List Load Balancer Types
+- Get a Load Balancer Type
+
+</details>
+
+<details>
+<summary><b>Load Balancers</b> (23 operations)</summary>
+
+- Get List Load Balancers
+- Post Create a Load Balancer
+- Delete a Load Balancer
+- Get a Load Balancer
+- Put Update a Load Balancer
+- Get List Actions for a Load Balancer
+- Get an Action for a Load Balancer
+- Post Add Service
+- Post Add Target
+- Post Attach a Load Balancer to a Network
+- Post Change Algorithm
+- Post Change reverse DNS entry for this Load Balancer
+- Post Change Load Balancer Protection
+- Post Change the Type of a Load Balancer
+- Post Delete Service
+- Post Detach a Load Balancer from a Network
+- Post Disable the public interface of a Load Balancer
+- Post Enable the public interface of a Load Balancer
+- Post Remove Target
+- Post Update Service
+- Get Metrics for a LoadBalancer
+- Get List Actions
+- Get an Action
+
+</details>
+
+<details>
+<summary><b>Locations</b> (2 operations)</summary>
+
+- Get List Locations
+- Get a Location
+
+</details>
+
+<details>
+<summary><b>Networks</b> (15 operations)</summary>
+
+- Get List Networks
+- Post Create a Network
+- Delete a Network
+- Get a Network
+- Put Update a Network
+- Get List Actions for a Network
+- Get an Action for a Network
+- Post Add a route to a Network
+- Post Add a subnet to a Network
+- Post Change IP range of a Network
+- Post Change Network Protection
+- Post Delete a route from a Network
+- Post Delete a subnet from a Network
+- Get List Actions
+- Get an Action
+
+</details>
+
+<details>
+<summary><b>Placement Groups</b> (5 operations)</summary>
+
+- Get List Placement Groups
+- Post Create a PlacementGroup
+- Delete a PlacementGroup
+- Get a PlacementGroup
+- Put Update a PlacementGroup
+
+</details>
+
+<details>
+<summary><b>Pricing</b> (1 operations)</summary>
+
+- Get all prices
+
+</details>
+
+<details>
+<summary><b>Primary Ips</b> (13 operations)</summary>
+
+- Get List Primary IPs
+- Post Create a Primary IP
+- Delete a Primary IP
+- Get a Primary IP
+- Put Update a Primary IP
+- Get List Actions for a Primary IP
+- Get an Action for a Primary IP
+- Post Assign a Primary IP to a resource
+- Post Change reverse DNS records for a Primary IP
+- Post Change Primary IP Protection
+- Post Unassign a Primary IP from a resource
+- Get List Actions
+- Get an Action
+
+</details>
+
+<details>
+<summary><b>Server Types</b> (2 operations)</summary>
+
+- Get List Server Types
+- Get a Server Type
+
+</details>
+
+<details>
+<summary><b>Servers</b> (33 operations)</summary>
+
+- Get List Servers
+- Post Create a Server
+- Delete a Server
+- Get a Server
+- Put Update a Server
+- Get List Actions for a Server
+- Get an Action for a Server
+- Post Add a Server to a Placement Group
+- Post Attach an ISO to a Server
+- Post Attach a Server to a Network
+- Post Change alias IPs of a Network
+- Post Change reverse DNS entry for this Server
+- Post Change Server Protection
+- Post Change the Type of a Server
+- Post Create Image from a Server
+- Post Detach a Server from a Network
+- Post Detach an ISO from a Server
+- Post Disable Backups for a Server
+- Post Disable Rescue Mode for a Server
+- Post Enable and Configure Backups for a Server
+- Post Enable Rescue Mode for a Server
+- Post Power off a Server
+- Post Power on a Server
+- Post Soft reboot a Server
+- Post Rebuild a Server from an Image
+- Post Remove from Placement Group
+- Post Request Console for a Server
+- Post Reset a Server
+- Post Reset root Password of a Server
+- Post Shutdown a Server
+- Get Metrics for a Server
+- Get List Actions
+- Get an Action
+
+</details>
+
+<details>
+<summary><b>SSH Keys</b> (5 operations)</summary>
+
+- Get List SSH keys
+- Post Create an SSH key
+- Delete an SSH key
+- Get a SSH key
+- Put Update an SSH key
+
+</details>
+
+<details>
+<summary><b>Storage Box Types</b> (2 operations)</summary>
+
+- Get List Storage Box Types
+- Get a Storage Box Type
+
+</details>
+
+<details>
+<summary><b>Storage Boxes</b> (30 operations)</summary>
+
+- Get List Storage Boxes
+- Post Create a Storage Box
+- Get List Actions
+- Get an Action
+- Delete a Storage Box
+- Get a Storage Box
+- Put Update a Storage Box
+- Get List Actions for a Storage Box
+- Post Change Protection
+- Post Change Type
+- Post Disable Snapshot Plan
+- Post Enable Snapshot Plan
+- Post Reset Password
+- Post Rollback Snapshot
+- Post Update Access Settings
+- Get an Action for a Storage Box
+- Get List folders of a Storage Box
+- Get List Snapshots
+- Post Create a Snapshot
+- Delete a Snapshot
+- Get a Snapshot
+- Put Update a Snapshot
+- Get List Subaccounts
+- Post Create a Subaccount
+- Delete a Subaccount
+- Get a Subaccount
+- Put Update a Subaccount
+- Post Change Home Directory
+- Post Reset Password
+- Post Update Access Settings
+
+</details>
+
+<details>
+<summary><b>Volumes</b> (13 operations)</summary>
+
+- Get List Volumes
+- Post Create a Volume
+- Delete a Volume
+- Get a Volume
+- Put Update a Volume
+- Get List Actions for a Volume
+- Get an Action for a Volume
+- Post Attach Volume to a Server
+- Post Change Volume Protection
+- Post Detach Volume
+- Post Resize Volume
+- Get List Actions
+- Get an Action
+
+</details>
+
+<details>
+<summary><b>Zones</b> (25 operations)</summary>
+
+- Get List Zones
+- Post Create a Zone
+- Get List Actions
+- Get an Action
+- Delete a Zone
+- Get a Zone
+- Put Update a Zone
+- Get List Actions for a Zone
+- Post Change a Zone s Primary Nameservers
+- Post Change a Zone s Protection
+- Post Change a Zone s Default TTL
+- Post Import a Zone file
+- Get an Action for a Zone
+- Get List RRSets
+- Post Create an RRSet
+- Delete an RRSet
+- Get an RRSet
+- Put Update an RRSet
+- Post Add Records to an RRSet
+- Post Change an RRSet s Protection
+- Post Change an RRSet s TTL
+- Post Remove Records from an RRSet
+- Post Set Records of an RRSet
+- Post Update Records of an RRSet
+- Get Export a Zone file
+
+</details>
 
 ---
 

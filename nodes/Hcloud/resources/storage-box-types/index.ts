@@ -180,7 +180,7 @@ export const storageBoxTypesDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Storage Box Type.",

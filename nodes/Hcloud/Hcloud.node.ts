@@ -23,14 +23,14 @@ import { zonesDescription } from './resources/zones';
 
 export class Hcloud implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'hcloud',
+		displayName: 'Hcloud',
 		name: 'N8nDevHcloud',
 		icon: { light: 'file:./hcloud.png', dark: 'file:./hcloud.dark.png' },
 		group: ['input'],
 		version: 1,
 		subtitle: '={{\$parameter["operation"] + ": " + \$parameter["resource"]}}',
 		description: 'Hetzner Cloud API',
-		defaults: { name: 'hcloud' },
+		defaults: { name: 'Hcloud' },
 		usableAsTool: true,
 		inputs: [NodeConnectionTypes.Main],
 		outputs: [NodeConnectionTypes.Main],
@@ -135,8 +135,8 @@ export class Hcloud implements INodeType {
 					"description": "Servers are virtual machines that can be provisioned.\n"
 				},
 				{
-					"name": "Ssh Keys",
-					"value": "Ssh Keys",
+					"name": "SSH Keys",
+					"value": "SSH Keys",
 					"description": "SSH keys are public keys you provide to the cloud system. They can be injected into Servers at creation time. We highly recommend that you use keys instead of passwords to manage your Servers.\n"
 				},
 				{

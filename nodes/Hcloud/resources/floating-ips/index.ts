@@ -111,8 +111,8 @@ export const floatingIpsDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "Change Reverse Dns Records For Floating Ip",
-					"value": "Change Reverse Dns Records For Floating Ip",
+					"name": "Change Reverse DNS Records For Floating Ip",
+					"value": "Change Reverse DNS Records For Floating Ip",
 					"action": "Change reverse DNS records for a Floating IP",
 					"description": "Change the reverse DNS records for this Floating IP.\n\nAllows to modify the PTR records set for the IP address.\n",
 					"routing": {
@@ -567,7 +567,7 @@ export const floatingIpsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Floating IP.",
@@ -629,7 +629,7 @@ export const floatingIpsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Floating IP.",
@@ -691,7 +691,7 @@ export const floatingIpsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Floating IP.",
@@ -828,7 +828,7 @@ export const floatingIpsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Floating IP.",
@@ -990,7 +990,7 @@ export const floatingIpsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Floating IP.",
@@ -1008,7 +1008,7 @@ export const floatingIpsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Action Id",
+			"displayName": "Action ID",
 			"name": "action_id",
 			"required": true,
 			"description": "ID of the Action.",
@@ -1070,7 +1070,7 @@ export const floatingIpsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Floating IP.",
@@ -1152,13 +1152,13 @@ export const floatingIpsDescription: INodeProperties[] = [
 						"Floating Ips"
 					],
 					"operation": [
-						"Change Reverse Dns Records For Floating Ip"
+						"Change Reverse DNS Records For Floating Ip"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Floating IP.",
@@ -1170,14 +1170,14 @@ export const floatingIpsDescription: INodeProperties[] = [
 						"Floating Ips"
 					],
 					"operation": [
-						"Change Reverse Dns Records For Floating Ip"
+						"Change Reverse DNS Records For Floating Ip"
 					]
 				}
 			}
 		},
 		{
 			"required": true,
-			"displayName": "Dns Ptr",
+			"displayName": "DNS Ptr",
 			"name": "dns_ptr",
 			"type": "string",
 			"default": "server.example.com",
@@ -1196,7 +1196,7 @@ export const floatingIpsDescription: INodeProperties[] = [
 						"Floating Ips"
 					],
 					"operation": [
-						"Change Reverse Dns Records For Floating Ip"
+						"Change Reverse DNS Records For Floating Ip"
 					]
 				}
 			}
@@ -1222,7 +1222,7 @@ export const floatingIpsDescription: INodeProperties[] = [
 						"Floating Ips"
 					],
 					"operation": [
-						"Change Reverse Dns Records For Floating Ip"
+						"Change Reverse DNS Records For Floating Ip"
 					]
 				}
 			}
@@ -1247,7 +1247,7 @@ export const floatingIpsDescription: INodeProperties[] = [
 						"Floating Ips"
 					],
 					"operation": [
-						"Change Reverse Dns Records For Floating Ip"
+						"Change Reverse DNS Records For Floating Ip"
 					]
 				}
 			}
@@ -1272,7 +1272,7 @@ export const floatingIpsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Floating IP.",
@@ -1360,7 +1360,7 @@ export const floatingIpsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Floating IP.",
@@ -1422,7 +1422,7 @@ export const floatingIpsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"description": "Filter the actions by ID. Can be used multiple times. The response will only contain\nactions matching the specified IDs.\n",
 			"default": "[\n  42\n]",
@@ -1591,7 +1591,7 @@ export const floatingIpsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Action.",

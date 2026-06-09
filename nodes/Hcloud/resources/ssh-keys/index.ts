@@ -9,14 +9,14 @@ export const sshKeysDescription: INodeProperties[] = [
 			"displayOptions": {
 				"show": {
 					"resource": [
-						"Ssh Keys"
+						"SSH Keys"
 					]
 				}
 			},
 			"options": [
 				{
-					"name": "List Ssh Keys",
-					"value": "List Ssh Keys",
+					"name": "List SSH Keys",
+					"value": "List SSH Keys",
 					"action": "List SSH keys",
 					"description": "Returns all SSH key objects.\n",
 					"routing": {
@@ -27,8 +27,8 @@ export const sshKeysDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "Create Ssh Key",
-					"value": "Create Ssh Key",
+					"name": "Create SSH Key",
+					"value": "Create SSH Key",
 					"action": "Create an SSH key",
 					"description": "Creates a new SSH key with the given `name` and `public_key`. Once an SSH key is created, it can be used in other calls such as creating Servers.\n",
 					"routing": {
@@ -39,8 +39,8 @@ export const sshKeysDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "Delete Ssh Key",
-					"value": "Delete Ssh Key",
+					"name": "Delete SSH Key",
+					"value": "Delete SSH Key",
 					"action": "Delete an SSH key",
 					"description": "Deletes an SSH key. It cannot be used anymore.\n",
 					"routing": {
@@ -51,8 +51,8 @@ export const sshKeysDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "Get Ssh Key",
-					"value": "Get Ssh Key",
+					"name": "Get SSH Key",
+					"value": "Get SSH Key",
 					"action": "Get a SSH key",
 					"description": "Returns a specific SSH key object.\n",
 					"routing": {
@@ -63,8 +63,8 @@ export const sshKeysDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "Replace Ssh Key",
-					"value": "Replace Ssh Key",
+					"name": "Replace SSH Key",
+					"value": "Replace SSH Key",
 					"action": "Update an SSH key",
 					"description": "Updates an SSH key. You can update an SSH key name and an SSH key labels.\n",
 					"routing": {
@@ -88,10 +88,10 @@ export const sshKeysDescription: INodeProperties[] = [
 			"displayOptions": {
 				"show": {
 					"resource": [
-						"Ssh Keys"
+						"SSH Keys"
 					],
 					"operation": [
-						"List Ssh Keys"
+						"List SSH Keys"
 					]
 				}
 			}
@@ -113,10 +113,10 @@ export const sshKeysDescription: INodeProperties[] = [
 			"displayOptions": {
 				"show": {
 					"resource": [
-						"Ssh Keys"
+						"SSH Keys"
 					],
 					"operation": [
-						"List Ssh Keys"
+						"List SSH Keys"
 					]
 				}
 			}
@@ -138,10 +138,10 @@ export const sshKeysDescription: INodeProperties[] = [
 			"displayOptions": {
 				"show": {
 					"resource": [
-						"Ssh Keys"
+						"SSH Keys"
 					],
 					"operation": [
-						"List Ssh Keys"
+						"List SSH Keys"
 					]
 				}
 			}
@@ -163,10 +163,10 @@ export const sshKeysDescription: INodeProperties[] = [
 			"displayOptions": {
 				"show": {
 					"resource": [
-						"Ssh Keys"
+						"SSH Keys"
 					],
 					"operation": [
-						"List Ssh Keys"
+						"List SSH Keys"
 					]
 				}
 			}
@@ -188,10 +188,10 @@ export const sshKeysDescription: INodeProperties[] = [
 			"displayOptions": {
 				"show": {
 					"resource": [
-						"Ssh Keys"
+						"SSH Keys"
 					],
 					"operation": [
-						"List Ssh Keys"
+						"List SSH Keys"
 					]
 				}
 			}
@@ -213,10 +213,10 @@ export const sshKeysDescription: INodeProperties[] = [
 			"displayOptions": {
 				"show": {
 					"resource": [
-						"Ssh Keys"
+						"SSH Keys"
 					],
 					"operation": [
-						"List Ssh Keys"
+						"List SSH Keys"
 					]
 				}
 			}
@@ -238,10 +238,10 @@ export const sshKeysDescription: INodeProperties[] = [
 			"displayOptions": {
 				"show": {
 					"resource": [
-						"Ssh Keys"
+						"SSH Keys"
 					],
 					"operation": [
-						"List Ssh Keys"
+						"List SSH Keys"
 					]
 				}
 			}
@@ -263,10 +263,10 @@ export const sshKeysDescription: INodeProperties[] = [
 			"displayOptions": {
 				"show": {
 					"resource": [
-						"Ssh Keys"
+						"SSH Keys"
 					],
 					"operation": [
-						"List Ssh Keys"
+						"List SSH Keys"
 					]
 				}
 			}
@@ -282,10 +282,10 @@ export const sshKeysDescription: INodeProperties[] = [
 			"displayOptions": {
 				"show": {
 					"resource": [
-						"Ssh Keys"
+						"SSH Keys"
 					],
 					"operation": [
-						"Create Ssh Key"
+						"Create SSH Key"
 					]
 				}
 			}
@@ -307,10 +307,10 @@ export const sshKeysDescription: INodeProperties[] = [
 			"displayOptions": {
 				"show": {
 					"resource": [
-						"Ssh Keys"
+						"SSH Keys"
 					],
 					"operation": [
-						"Create Ssh Key"
+						"Create SSH Key"
 					]
 				}
 			}
@@ -333,10 +333,10 @@ export const sshKeysDescription: INodeProperties[] = [
 			"displayOptions": {
 				"show": {
 					"resource": [
-						"Ssh Keys"
+						"SSH Keys"
 					],
 					"operation": [
-						"Create Ssh Key"
+						"Create SSH Key"
 					]
 				}
 			}
@@ -359,10 +359,10 @@ export const sshKeysDescription: INodeProperties[] = [
 			"displayOptions": {
 				"show": {
 					"resource": [
-						"Ssh Keys"
+						"SSH Keys"
 					],
 					"operation": [
-						"Create Ssh Key"
+						"Create SSH Key"
 					]
 				}
 			}
@@ -384,10 +384,10 @@ export const sshKeysDescription: INodeProperties[] = [
 			"displayOptions": {
 				"show": {
 					"resource": [
-						"Ssh Keys"
+						"SSH Keys"
 					],
 					"operation": [
-						"Create Ssh Key"
+						"Create SSH Key"
 					]
 				}
 			}
@@ -403,16 +403,16 @@ export const sshKeysDescription: INodeProperties[] = [
 			"displayOptions": {
 				"show": {
 					"resource": [
-						"Ssh Keys"
+						"SSH Keys"
 					],
 					"operation": [
-						"Delete Ssh Key"
+						"Delete SSH Key"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the SSH Key.",
@@ -421,10 +421,10 @@ export const sshKeysDescription: INodeProperties[] = [
 			"displayOptions": {
 				"show": {
 					"resource": [
-						"Ssh Keys"
+						"SSH Keys"
 					],
 					"operation": [
-						"Delete Ssh Key"
+						"Delete SSH Key"
 					]
 				}
 			}
@@ -446,10 +446,10 @@ export const sshKeysDescription: INodeProperties[] = [
 			"displayOptions": {
 				"show": {
 					"resource": [
-						"Ssh Keys"
+						"SSH Keys"
 					],
 					"operation": [
-						"Delete Ssh Key"
+						"Delete SSH Key"
 					]
 				}
 			}
@@ -465,16 +465,16 @@ export const sshKeysDescription: INodeProperties[] = [
 			"displayOptions": {
 				"show": {
 					"resource": [
-						"Ssh Keys"
+						"SSH Keys"
 					],
 					"operation": [
-						"Get Ssh Key"
+						"Get SSH Key"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the SSH Key.",
@@ -483,10 +483,10 @@ export const sshKeysDescription: INodeProperties[] = [
 			"displayOptions": {
 				"show": {
 					"resource": [
-						"Ssh Keys"
+						"SSH Keys"
 					],
 					"operation": [
-						"Get Ssh Key"
+						"Get SSH Key"
 					]
 				}
 			}
@@ -508,10 +508,10 @@ export const sshKeysDescription: INodeProperties[] = [
 			"displayOptions": {
 				"show": {
 					"resource": [
-						"Ssh Keys"
+						"SSH Keys"
 					],
 					"operation": [
-						"Get Ssh Key"
+						"Get SSH Key"
 					]
 				}
 			}
@@ -527,16 +527,16 @@ export const sshKeysDescription: INodeProperties[] = [
 			"displayOptions": {
 				"show": {
 					"resource": [
-						"Ssh Keys"
+						"SSH Keys"
 					],
 					"operation": [
-						"Replace Ssh Key"
+						"Replace SSH Key"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the SSH Key.",
@@ -545,10 +545,10 @@ export const sshKeysDescription: INodeProperties[] = [
 			"displayOptions": {
 				"show": {
 					"resource": [
-						"Ssh Keys"
+						"SSH Keys"
 					],
 					"operation": [
-						"Replace Ssh Key"
+						"Replace SSH Key"
 					]
 				}
 			}
@@ -570,10 +570,10 @@ export const sshKeysDescription: INodeProperties[] = [
 			"displayOptions": {
 				"show": {
 					"resource": [
-						"Ssh Keys"
+						"SSH Keys"
 					],
 					"operation": [
-						"Replace Ssh Key"
+						"Replace SSH Key"
 					]
 				}
 			}
@@ -595,10 +595,10 @@ export const sshKeysDescription: INodeProperties[] = [
 			"displayOptions": {
 				"show": {
 					"resource": [
-						"Ssh Keys"
+						"SSH Keys"
 					],
 					"operation": [
-						"Replace Ssh Key"
+						"Replace SSH Key"
 					]
 				}
 			}
@@ -620,10 +620,10 @@ export const sshKeysDescription: INodeProperties[] = [
 			"displayOptions": {
 				"show": {
 					"resource": [
-						"Ssh Keys"
+						"SSH Keys"
 					],
 					"operation": [
-						"Replace Ssh Key"
+						"Replace SSH Key"
 					]
 				}
 			}

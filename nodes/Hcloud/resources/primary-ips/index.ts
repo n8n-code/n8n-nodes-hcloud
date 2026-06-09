@@ -111,8 +111,8 @@ export const primaryIpsDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "Change Reverse Dns Records For Primary Ip",
-					"value": "Change Reverse Dns Records For Primary Ip",
+					"name": "Change Reverse DNS Records For Primary Ip",
+					"value": "Change Reverse DNS Records For Primary Ip",
 					"action": "Change reverse DNS records for a Primary IP",
 					"description": "Change the reverse DNS records for this Primary IP.\n\nAllows to modify the PTR records set for the IP address.\n",
 					"routing": {
@@ -387,7 +387,7 @@ export const primaryIpsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Assignee Id",
+			"displayName": "Assignee ID",
 			"name": "assignee_id",
 			"type": "number",
 			"default": 17,
@@ -650,7 +650,7 @@ export const primaryIpsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Primary IP.",
@@ -712,7 +712,7 @@ export const primaryIpsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Primary IP.",
@@ -774,7 +774,7 @@ export const primaryIpsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Primary IP.",
@@ -911,7 +911,7 @@ export const primaryIpsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Primary IP.",
@@ -1073,7 +1073,7 @@ export const primaryIpsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Primary IP.",
@@ -1091,7 +1091,7 @@ export const primaryIpsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Action Id",
+			"displayName": "Action ID",
 			"name": "action_id",
 			"required": true,
 			"description": "ID of the Action.",
@@ -1153,7 +1153,7 @@ export const primaryIpsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Primary IP.",
@@ -1172,7 +1172,7 @@ export const primaryIpsDescription: INodeProperties[] = [
 		},
 		{
 			"required": true,
-			"displayName": "Assignee Id",
+			"displayName": "Assignee ID",
 			"name": "assignee_id",
 			"type": "number",
 			"default": 4711,
@@ -1267,13 +1267,13 @@ export const primaryIpsDescription: INodeProperties[] = [
 						"Primary Ips"
 					],
 					"operation": [
-						"Change Reverse Dns Records For Primary Ip"
+						"Change Reverse DNS Records For Primary Ip"
 					]
 				}
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Primary IP.",
@@ -1285,14 +1285,14 @@ export const primaryIpsDescription: INodeProperties[] = [
 						"Primary Ips"
 					],
 					"operation": [
-						"Change Reverse Dns Records For Primary Ip"
+						"Change Reverse DNS Records For Primary Ip"
 					]
 				}
 			}
 		},
 		{
 			"required": true,
-			"displayName": "Dns Ptr",
+			"displayName": "DNS Ptr",
 			"name": "dns_ptr",
 			"type": "string",
 			"default": "server.example.com",
@@ -1311,7 +1311,7 @@ export const primaryIpsDescription: INodeProperties[] = [
 						"Primary Ips"
 					],
 					"operation": [
-						"Change Reverse Dns Records For Primary Ip"
+						"Change Reverse DNS Records For Primary Ip"
 					]
 				}
 			}
@@ -1337,7 +1337,7 @@ export const primaryIpsDescription: INodeProperties[] = [
 						"Primary Ips"
 					],
 					"operation": [
-						"Change Reverse Dns Records For Primary Ip"
+						"Change Reverse DNS Records For Primary Ip"
 					]
 				}
 			}
@@ -1362,7 +1362,7 @@ export const primaryIpsDescription: INodeProperties[] = [
 						"Primary Ips"
 					],
 					"operation": [
-						"Change Reverse Dns Records For Primary Ip"
+						"Change Reverse DNS Records For Primary Ip"
 					]
 				}
 			}
@@ -1387,7 +1387,7 @@ export const primaryIpsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Primary IP.",
@@ -1475,7 +1475,7 @@ export const primaryIpsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Primary IP.",
@@ -1537,7 +1537,7 @@ export const primaryIpsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"description": "Filter the actions by ID. Can be used multiple times. The response will only contain\nactions matching the specified IDs.\n",
 			"default": "[\n  42\n]",
@@ -1706,7 +1706,7 @@ export const primaryIpsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "ID of the Action.",

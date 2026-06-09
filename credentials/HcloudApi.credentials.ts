@@ -8,7 +8,7 @@ import type {
 export class HcloudApi implements ICredentialType {
 	name = 'N8nDevHcloudApi';
 
-	displayName = 'hcloud API';
+	displayName = 'Hcloud API';
 
 	icon: Icon = { light: 'file:../nodes/Hcloud/hcloud.png', dark: 'file:../nodes/Hcloud/hcloud.dark.png' };
 
@@ -22,7 +22,7 @@ export class HcloudApi implements ICredentialType {
 			default: 'https://api.hetzner.cloud/v1',
 			required: true,
 			placeholder: 'https://api.hetzner.cloud/v1',
-			description: 'The base URL of your hcloud API server',
+			description: 'The base URL of your Hcloud API server',
 		},
 		{
 			displayName: 'API Key',

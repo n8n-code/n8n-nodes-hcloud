@@ -22,32 +22,32 @@ import { volumesDescription } from './resources/volumes';
 import { zonesDescription } from './resources/zones';
 
 export class Hcloud implements INodeType {
-	description: INodeTypeDescription = {
-		displayName: 'Hcloud',
-		name: 'N8nDevHcloud',
-		icon: { light: 'file:./hcloud.png', dark: 'file:./hcloud.dark.png' },
-		group: ['input'],
-		version: 1,
-		subtitle: '={{\$parameter["operation"] + ": " + \$parameter["resource"]}}',
-		description: 'Hetzner Cloud API',
-		defaults: { name: 'Hcloud' },
-		usableAsTool: true,
-		inputs: [NodeConnectionTypes.Main],
-		outputs: [NodeConnectionTypes.Main],
-		credentials: [
-			{
-				name: 'N8nDevHcloudApi',
-				required: true,
-			},
-		],
-		requestDefaults: {
-			baseURL: '={{\$credentials.url}}',
-			headers: {
-				Accept: 'application/json',
-				'Content-Type': 'application/json',
-			},
-		},
-		properties: [
+        description: INodeTypeDescription = {
+                displayName: 'Hcloud',
+                name: 'N8nDevHcloud',
+                icon: { light: 'file:./hcloud.png', dark: 'file:./hcloud.dark.png' },
+                group: ['input'],
+                version: 1,
+                subtitle: '={{\$parameter["operation"] + ": " + \$parameter["resource"]}}',
+                description: 'Hetzner Cloud API',
+                defaults: { name: 'Hcloud' },
+                usableAsTool: true,
+                inputs: [NodeConnectionTypes.Main],
+                outputs: [NodeConnectionTypes.Main],
+                credentials: [
+                        {
+                                name: 'N8nDevHcloudApi',
+                                required: true,
+                        },
+                ],
+                requestDefaults: {
+                        baseURL: '={{\$credentials.url}}',
+                        headers: {
+                                Accept: 'application/json',
+                                'Content-Type': 'application/json',
+                        },
+                },
+                properties: [
 		{
 			"displayName": "Resource",
 			"name": "resource",
@@ -183,6 +183,6 @@ export class Hcloud implements INodeType {
 		...storageBoxesDescription,
 		...volumesDescription,
 		...zonesDescription
-		],
-	};
+                ],
+        };
 }

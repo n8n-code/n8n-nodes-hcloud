@@ -30,7 +30,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 					"name": "Create Load Balancer",
 					"value": "Create Load Balancer",
 					"action": "Create a Load Balancer",
-					"description": "Creates a Load Balancer.\n\n#### Operation specific errors\n\n| Status | Code | Description |\n| --- | --- | --- |\n|  | `cloud_resource_ip_not_allowed` | The IP you are trying to add as a target belongs to a Hetzner Cloud resource |\n|  | `ip_not_owned` | The IP is not owned by the owner of the project of the Load Balancer |\n|  | `load_balancer_not_attached_to_network` | The Load Balancer is not attached to a network |\n|  | `robot_unavailable` | Robot was not available. The caller may retry the operation after a short delay. |\n|  | `server_not_attached_to_network` | The server you are trying to add as a target is not attached to the same network as the Load Balancer |\n|  | `source_port_already_used` | The source port you are trying to add is already in use |\n|  | `missing_ipv4` | The server that you are trying to add as a public target does not have a public IPv4 address |\n|  | `target_already_defined` | The Load Balancer target you are trying to define is already defined |\n",
+					"description": "Creates a Load Balancer.\n\n#### Operation specific errors\n\n| Status | Code | Description |\n| --- | --- | --- |\n| `412` | `source_port_already_used` | The source port you are trying to add is already in use |\n| `422` | `ip_not_owned` | The IP is not owned by the owner of the project of the Load Balancer |\n| `422` | `load_balancer_not_attached_to_network` | The Load Balancer is not attached to a network |\n| `422` | `resolve_cloud_private_targets_error` | The server you are trying to add as a target is not attached to the same network as the Load Balancer |\n| `422` | `resolve_cloud_public_targets_error` | The server that you are trying to add as a public target does not have a public IPv4 address |\n| `422` | `target_already_defined` | The Load Balancer target you are trying to define is already defined |\n",
 					"routing": {
 						"request": {
 							"method": "POST",
@@ -102,7 +102,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 					"name": "Add Service",
 					"value": "Add Service",
 					"action": "Add Service",
-					"description": "Adds a service to a Load Balancer.\n\n#### Operation specific errors\n\n| Status | Code | Description |\n| --- | --- | --- |\n|  | `source_port_already_used` | The source port you are trying to add is already in use |\n",
+					"description": "Adds a service to a Load Balancer.\n\n#### Operation specific errors\n\n| Status | Code | Description |\n| --- | --- | --- |\n| `412` | `source_port_already_used` | The source port you are trying to add is already in use |\n",
 					"routing": {
 						"request": {
 							"method": "POST",
@@ -114,7 +114,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 					"name": "Add Target",
 					"value": "Add Target",
 					"action": "Add Target",
-					"description": "Adds a target to a Load Balancer.\n\n#### Operation specific errors\n\n| Status | Code | Description |\n| --- | --- | --- |\n|  | `cloud_resource_ip_not_allowed` | The IP you are trying to add as a target belongs to a Hetzner Cloud resource |\n|  | `ip_not_owned` | The IP you are trying to add as a target is not owned by the Project owner |\n|  | `load_balancer_public_interface_disabled` | The Load Balancer's public network interface is disabled |\n|  | `load_balancer_not_attached_to_network` | The Load Balancer is not attached to a network |\n|  | `robot_unavailable` | Robot was not available. The caller may retry the operation after a short delay. |\n|  | `server_not_attached_to_network` | The server you are trying to add as a target is not attached to the same network as the Load Balancer |\n|  | `missing_ipv4` | The server that you are trying to add as a public target does not have a public IPv4 address |\n|  | `target_already_defined` | The Load Balancer target you are trying to define is already defined |\n",
+					"description": "Adds a target to a Load Balancer.\n\n#### Operation specific errors\n\n| Status | Code | Description |\n| --- | --- | --- |\n| `422` | `ip_not_in_vswitch_subnet` | The IP you are trying to add does not belong to the vswitch subnet of the attached network |\n| `422` | `ip_not_owned` | The IP you are trying to add as a target is not owned by the Project owner |\n| `422` | `load_balancer_public_interface_disabled` | The Load Balancer's public network interface is disabled |\n| `422` | `load_balancer_not_attached_to_network` | The Load Balancer is not attached to a network |\n| `422` | `network_has_no_vswitch_subnet` | The given IP is private but attached network does not have a vswitch subnet |\n| `422` | `resolve_cloud_private_targets_error` | The server you are trying to add as a target is not attached to the same network as the Load Balancer |\n| `422` | `resolve_cloud_public_targets_error` | The server that you are trying to add as a public target does not have a public IPv4 address |\n| `422` | `target_already_defined` | The Load Balancer target you are trying to define is already defined |\n",
 					"routing": {
 						"request": {
 							"method": "POST",
@@ -126,7 +126,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 					"name": "Attach Load Balancer To Network",
 					"value": "Attach Load Balancer To Network",
 					"action": "Attach a Load Balancer to a Network",
-					"description": "Attach a Load Balancer to a Network.\n\n#### Operation specific errors\n\n| Status | Code | Description |\n| --- | --- | --- |\n|  | `load_balancer_already_attached` | The Load Balancer is already attached to a network |\n|  | `ip_not_available` | The provided Network IP is not available |\n|  | `no_subnet_available` | No Subnet or IP is available for the Load Balancer within the network |\n",
+					"description": "Attach a Load Balancer to a Network.\n\n#### Operation specific errors\n\n| Status | Code | Description |\n| --- | --- | --- |\n| `422` | `load_balancer_already_attached` | The Load Balancer is already attached to a network |\n| `422` | `ip_not_available` | The provided Network IP is not available |\n| `422` | `no_subnet_available` | No Subnet or IP is available for the Load Balancer within the network |\n",
 					"routing": {
 						"request": {
 							"method": "POST",
@@ -174,7 +174,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 					"name": "Change Type Of Load Balancer",
 					"value": "Change Type Of Load Balancer",
 					"action": "Change the Type of a Load Balancer",
-					"description": "Changes the type (Max Services, Max Targets and Max Connections) of a Load Balancer.\n\n#### Operation specific errors\n\n| Status | Code | Description |\n| --- | --- | --- |\n|  | `invalid_load_balancer_type` | The Load Balancer type does not fit for the given Load Balancer |\n",
+					"description": "Changes the type (Max Services, Max Targets and Max Connections) of a Load Balancer.\n\n#### Operation specific errors\n\n| Status | Code | Description |\n| --- | --- | --- |\n| `422` | `invalid_load_balancer_type` | The Load Balancer type does not fit for the given Load Balancer |\n",
 					"routing": {
 						"request": {
 							"method": "POST",
@@ -210,7 +210,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 					"name": "Disable Public Interface Of Load Balancer",
 					"value": "Disable Public Interface Of Load Balancer",
 					"action": "Disable the public interface of a Load Balancer",
-					"description": "Disable the public interface of a Load Balancer. The Load Balancer will be not accessible from the internet via its public IPs.\n\n#### Operation specific errors\n\n| Status | Code | Description |\n| --- | --- | --- |\n|  | `load_balancer_not_attached_to_network` | The Load Balancer is not attached to a network |\n|  | `targets_without_use_private_ip` | The Load Balancer has targets that use the public IP instead of the private IP |\n",
+					"description": "Disable the public interface of a Load Balancer. The Load Balancer will be not accessible from the internet via its public IPs.\n\n#### Operation specific errors\n\n| Status | Code | Description |\n| --- | --- | --- |\n| `422` | `load_balancer_not_attached_to_network` | The Load Balancer is not attached to a network |\n| `422` | `targets_without_use_private_ip` | The Load Balancer has targets that use the public IP instead of the private IP |\n",
 					"routing": {
 						"request": {
 							"method": "POST",
@@ -246,7 +246,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 					"name": "Update Service",
 					"value": "Update Service",
 					"action": "Update Service",
-					"description": "Updates a Load Balancer Service.\n\n#### Operation specific errors\n\n| Status | Code | Description |\n| --- | --- | --- |\n|  | `source_port_already_used` | The source port you are trying to add is already in use |\n",
+					"description": "Updates a Load Balancer Service.\n\n#### Operation specific errors\n\n| Status | Code | Description |\n| --- | --- | --- |\n| `422` | `source_port_already_used` | The source port you are trying to add is already in use |\n",
 					"routing": {
 						"request": {
 							"method": "POST",
@@ -315,7 +315,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 		{
 			"displayName": "Sort",
 			"name": "sort",
-			"description": "Sort resources by field and direction. Can be used multiple times. For more\ninformation, see \"Sorting\".\n",
+			"description": "Sort resources by field and direction. May be used multiple times.\n\nFor more information, see \"Sorting\".\n",
 			"default": "[\n  null\n]",
 			"type": "json",
 			"routing": {
@@ -340,7 +340,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 		{
 			"displayName": "Name",
 			"name": "name",
-			"description": "Filter resources by their name. The response will only contain the resources\nmatching exactly the specified name.\n",
+			"description": "Filter resources by their name.\n\nThe response will only contain the resources\nmatching exactly the specified name.\n",
 			"default": "",
 			"type": "string",
 			"routing": {
@@ -365,7 +365,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 		{
 			"displayName": "Label Selector",
 			"name": "label_selector",
-			"description": "Filter resources by labels. The response will only contain resources matching the\nlabel selector. For more information, see \"Label Selector\".\n",
+			"description": "Filter resources by labels.\n\nThe response will only contain resources matching the label selector.\nFor more information, see \"Label Selector\".\n",
 			"default": "",
 			"type": "string",
 			"routing": {
@@ -1034,7 +1034,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 		{
 			"displayName": "Sort",
 			"name": "sort",
-			"description": "Sort actions by field and direction. Can be used multiple times. For more\ninformation, see \"Sorting\".\n",
+			"description": "Sort actions by field and direction. May be used multiple times.\n\nFor more information, see \"Sorting\".\n",
 			"default": "[\n  null\n]",
 			"type": "json",
 			"routing": {
@@ -1059,7 +1059,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 		{
 			"displayName": "Status",
 			"name": "status",
-			"description": "Filter the actions by status. Can be used multiple times. The response will only\ncontain actions matching the specified statuses.\n",
+			"description": "Filter the actions by status. May be used multiple times.\n\nThe response will only contain actions matching the specified statuses.\n",
 			"default": "[\n  null\n]",
 			"type": "json",
 			"routing": {
@@ -2965,7 +2965,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 			"displayName": "Start",
 			"name": "start",
 			"required": true,
-			"description": "Start of period to get Metrics for (in [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339#section-5.6) format).",
+			"description": "Start of period to get Metrics for (must be in [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339#section-5.6) format).",
 			"default": "",
 			"type": "string",
 			"routing": {
@@ -2991,7 +2991,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 			"displayName": "End",
 			"name": "end",
 			"required": true,
-			"description": "End of period to get Metrics for (in [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339#section-5.6) format).",
+			"description": "End of period to get Metrics for (must be in [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339#section-5.6) format).",
 			"default": "",
 			"type": "string",
 			"routing": {
@@ -3085,7 +3085,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 		{
 			"displayName": "ID",
 			"name": "id",
-			"description": "Filter the actions by ID. Can be used multiple times. The response will only contain\nactions matching the specified IDs.\n",
+			"description": "Filter the actions by ID. May be used multiple times.\n\nThe response will only contain actions matching the specified IDs.\n",
 			"default": "[\n  42\n]",
 			"type": "json",
 			"routing": {
@@ -3110,7 +3110,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 		{
 			"displayName": "Sort",
 			"name": "sort",
-			"description": "Sort actions by field and direction. Can be used multiple times. For more\ninformation, see \"Sorting\".\n",
+			"description": "Sort actions by field and direction. May be used multiple times.\n\nFor more information, see \"Sorting\".\n",
 			"default": "[\n  null\n]",
 			"type": "json",
 			"routing": {
@@ -3135,7 +3135,7 @@ export const loadBalancersDescription: INodeProperties[] = [
 		{
 			"displayName": "Status",
 			"name": "status",
-			"description": "Filter the actions by status. Can be used multiple times. The response will only\ncontain actions matching the specified statuses.\n",
+			"description": "Filter the actions by status. May be used multiple times.\n\nThe response will only contain actions matching the specified statuses.\n",
 			"default": "[\n  null\n]",
 			"type": "json",
 			"routing": {

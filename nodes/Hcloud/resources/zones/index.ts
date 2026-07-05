@@ -339,7 +339,7 @@ export const zonesDescription: INodeProperties[] = [
 		{
 			"displayName": "Name",
 			"name": "name",
-			"description": "Filter resources by their name. The response will only contain the resources\nmatching exactly the specified name.\n",
+			"description": "Filter resources by their name.\n\nThe response will only contain the resources\nmatching exactly the specified name.\n",
 			"default": "",
 			"type": "string",
 			"routing": {
@@ -364,7 +364,7 @@ export const zonesDescription: INodeProperties[] = [
 		{
 			"displayName": "Mode",
 			"name": "mode",
-			"description": "Filter resources by their mode. The response will only contain the resources\nmatching exactly the specified mode.\n",
+			"description": "Filter resources by their mode.\n\nThe response will only contain the resources matching exactly the specified mode.\n",
 			"default": "primary",
 			"type": "options",
 			"options": [
@@ -399,7 +399,7 @@ export const zonesDescription: INodeProperties[] = [
 		{
 			"displayName": "Label Selector",
 			"name": "label_selector",
-			"description": "Filter resources by labels. The response will only contain resources matching the\nlabel selector. For more information, see \"Label Selector\".\n",
+			"description": "Filter resources by labels.\n\nThe response will only contain resources matching the label selector.\nFor more information, see \"Label Selector\".\n",
 			"default": "",
 			"type": "string",
 			"routing": {
@@ -424,7 +424,7 @@ export const zonesDescription: INodeProperties[] = [
 		{
 			"displayName": "Sort",
 			"name": "sort",
-			"description": "Sort resources by field and direction. Can be used multiple times. For more\ninformation, see \"Sorting\".\n",
+			"description": "Sort resources by field and direction. May be used multiple times.\n\nFor more information, see \"Sorting\".\n",
 			"default": "[\n  null\n]",
 			"type": "json",
 			"routing": {
@@ -774,7 +774,7 @@ export const zonesDescription: INodeProperties[] = [
 		{
 			"displayName": "ID",
 			"name": "id",
-			"description": "Filter the actions by ID. Can be used multiple times. The response will only contain\nactions matching the specified IDs.\n",
+			"description": "Filter the actions by ID. May be used multiple times.\n\nThe response will only contain actions matching the specified IDs.\n",
 			"default": "[\n  42\n]",
 			"type": "json",
 			"routing": {
@@ -799,7 +799,7 @@ export const zonesDescription: INodeProperties[] = [
 		{
 			"displayName": "Sort",
 			"name": "sort",
-			"description": "Sort actions by field and direction. Can be used multiple times. For more\ninformation, see \"Sorting\".\n",
+			"description": "Sort actions by field and direction. May be used multiple times.\n\nFor more information, see \"Sorting\".\n",
 			"default": "[\n  null\n]",
 			"type": "json",
 			"routing": {
@@ -824,7 +824,7 @@ export const zonesDescription: INodeProperties[] = [
 		{
 			"displayName": "Status",
 			"name": "status",
-			"description": "Filter the actions by status. Can be used multiple times. The response will only\ncontain actions matching the specified statuses.\n",
+			"description": "Filter the actions by status. May be used multiple times.\n\nThe response will only contain actions matching the specified statuses.\n",
 			"default": "[\n  null\n]",
 			"type": "json",
 			"routing": {
@@ -1234,7 +1234,7 @@ export const zonesDescription: INodeProperties[] = [
 		{
 			"displayName": "Sort",
 			"name": "sort",
-			"description": "Sort actions by field and direction. Can be used multiple times. For more\ninformation, see \"Sorting\".\n",
+			"description": "Sort actions by field and direction. May be used multiple times.\n\nFor more information, see \"Sorting\".\n",
 			"default": "[\n  null\n]",
 			"type": "json",
 			"routing": {
@@ -1259,7 +1259,7 @@ export const zonesDescription: INodeProperties[] = [
 		{
 			"displayName": "Status",
 			"name": "status",
-			"description": "Filter the actions by status. Can be used multiple times. The response will only\ncontain actions matching the specified statuses.\n",
+			"description": "Filter the actions by status. May be used multiple times.\n\nThe response will only contain actions matching the specified statuses.\n",
 			"default": "[\n  null\n]",
 			"type": "json",
 			"routing": {
@@ -1827,7 +1827,7 @@ export const zonesDescription: INodeProperties[] = [
 		{
 			"displayName": "Name",
 			"name": "name",
-			"description": "Filter resources by their name. The response will only contain the resources\nmatching exactly the specified name.\n",
+			"description": "Filter resources by their name.\n\nThe response will only contain the resources\nmatching exactly the specified name.\n",
 			"default": "",
 			"type": "string",
 			"routing": {
@@ -1852,7 +1852,7 @@ export const zonesDescription: INodeProperties[] = [
 		{
 			"displayName": "Type",
 			"name": "type",
-			"description": "Filter resources by their type. Can be used multiple times. The response will only\ncontain resources matching the specified types.\n",
+			"description": "Filter resources by their type. May be used multiple times.\n\nThe response will only contain resources matching the specified types.\n",
 			"default": "[\n  \"A\"\n]",
 			"type": "json",
 			"routing": {
@@ -1877,7 +1877,7 @@ export const zonesDescription: INodeProperties[] = [
 		{
 			"displayName": "Label Selector",
 			"name": "label_selector",
-			"description": "Filter resources by labels. The response will only contain resources matching the\nlabel selector. For more information, see \"Label Selector\".\n",
+			"description": "Filter resources by labels.\n\nThe response will only contain resources matching the label selector.\nFor more information, see \"Label Selector\".\n",
 			"default": "",
 			"type": "string",
 			"routing": {
@@ -1902,7 +1902,7 @@ export const zonesDescription: INodeProperties[] = [
 		{
 			"displayName": "Sort",
 			"name": "sort",
-			"description": "Sort resources by field and direction. Can be used multiple times. For more\ninformation, see \"Sorting\".\n",
+			"description": "Sort resources by field and direction. May be used multiple times.\n\nFor more information, see \"Sorting\".\n",
 			"default": "[\n  null\n]",
 			"type": "json",
 			"routing": {

@@ -30,7 +30,7 @@ export const volumesDescription: INodeProperties[] = [
 					"name": "Create Volume",
 					"value": "Create Volume",
 					"action": "Create a Volume",
-					"description": "Creates a new Volume attached to a Server. If you want to create a Volume that is not attached to a Server, you need to provide the `location` key instead of `server`. This can be either the ID or the name of the Location this Volume will be created in. Note that a Volume can be attached to a Server only in the same Location as the Volume itself.\n\nSpecifying the Server during Volume creation will automatically attach the Volume to that Server after it has been initialized. In that case, the `next_actions` key in the response is an array which contains a single `attach_volume` action.\n\nThe minimum Volume size is 10GB and the maximum size is 10TB (10240GB).\n\nA volume’s name can consist of alphanumeric characters, dashes, underscores, and dots, but has to start and end with an alphanumeric character. The total length is limited to 64 characters. Volume names must be unique per Project.\n\n#### Operation specific errors\n\n| Status | Code | Description |\n| --- | --- | --- |\n|  | `no_space_left_in_location` | There is no volume space left in the given location |\n",
+					"description": "Creates a new Volume attached to a Server. If you want to create a Volume that is not attached to a Server, you need to provide the `location` key instead of `server`. This can be either the ID or the name of the Location this Volume will be created in. Note that a Volume can be attached to a Server only in the same Location as the Volume itself.\n\nSpecifying the Server during Volume creation will automatically attach the Volume to that Server after it has been initialized. In that case, the `next_actions` key in the response is an array which contains a single `attach_volume` action.\n\nThe minimum Volume size is 10GB and the maximum size is 10TB (10240GB).\n\nA volume’s name can consist of alphanumeric characters, dashes, underscores, and dots, but has to start and end with an alphanumeric character. The total length is limited to 64 characters. Volume names must be unique per Project.\n\n#### Operation specific errors\n\n| Status | Code | Description |\n| --- | --- | --- |\n| `422` | `no_space_left_in_location` | There is no volume space left in the given location |\n",
 					"routing": {
 						"request": {
 							"method": "POST",
@@ -195,7 +195,7 @@ export const volumesDescription: INodeProperties[] = [
 		{
 			"displayName": "Status",
 			"name": "status",
-			"description": "Filter resources by status. Can be used multiple times. The response will only\ncontain the resources with the specified status.\n",
+			"description": "Filter resources by status. May be used multiple times.\n\nThe response will only contain the resources with the specified status.\n",
 			"default": "[\n  \"available\"\n]",
 			"type": "json",
 			"routing": {
@@ -220,7 +220,7 @@ export const volumesDescription: INodeProperties[] = [
 		{
 			"displayName": "Sort",
 			"name": "sort",
-			"description": "Sort resources by field and direction. Can be used multiple times. For more\ninformation, see \"Sorting\".\n",
+			"description": "Sort resources by field and direction. May be used multiple times.\n\nFor more information, see \"Sorting\".\n",
 			"default": "[\n  null\n]",
 			"type": "json",
 			"routing": {
@@ -245,7 +245,7 @@ export const volumesDescription: INodeProperties[] = [
 		{
 			"displayName": "Name",
 			"name": "name",
-			"description": "Filter resources by their name. The response will only contain the resources\nmatching exactly the specified name.\n",
+			"description": "Filter resources by their name.\n\nThe response will only contain the resources\nmatching exactly the specified name.\n",
 			"default": "",
 			"type": "string",
 			"routing": {
@@ -270,7 +270,7 @@ export const volumesDescription: INodeProperties[] = [
 		{
 			"displayName": "Label Selector",
 			"name": "label_selector",
-			"description": "Filter resources by labels. The response will only contain resources matching the\nlabel selector. For more information, see \"Label Selector\".\n",
+			"description": "Filter resources by labels.\n\nThe response will only contain resources matching the label selector.\nFor more information, see \"Label Selector\".\n",
 			"default": "",
 			"type": "string",
 			"routing": {
@@ -864,7 +864,7 @@ export const volumesDescription: INodeProperties[] = [
 		{
 			"displayName": "Sort",
 			"name": "sort",
-			"description": "Sort actions by field and direction. Can be used multiple times. For more\ninformation, see \"Sorting\".\n",
+			"description": "Sort actions by field and direction. May be used multiple times.\n\nFor more information, see \"Sorting\".\n",
 			"default": "[\n  null\n]",
 			"type": "json",
 			"routing": {
@@ -889,7 +889,7 @@ export const volumesDescription: INodeProperties[] = [
 		{
 			"displayName": "Status",
 			"name": "status",
-			"description": "Filter the actions by status. Can be used multiple times. The response will only\ncontain actions matching the specified statuses.\n",
+			"description": "Filter the actions by status. May be used multiple times.\n\nThe response will only contain actions matching the specified statuses.\n",
 			"default": "[\n  null\n]",
 			"type": "json",
 			"routing": {
@@ -1438,7 +1438,7 @@ export const volumesDescription: INodeProperties[] = [
 		{
 			"displayName": "ID",
 			"name": "id",
-			"description": "Filter the actions by ID. Can be used multiple times. The response will only contain\nactions matching the specified IDs.\n",
+			"description": "Filter the actions by ID. May be used multiple times.\n\nThe response will only contain actions matching the specified IDs.\n",
 			"default": "[\n  42\n]",
 			"type": "json",
 			"routing": {
@@ -1463,7 +1463,7 @@ export const volumesDescription: INodeProperties[] = [
 		{
 			"displayName": "Sort",
 			"name": "sort",
-			"description": "Sort actions by field and direction. Can be used multiple times. For more\ninformation, see \"Sorting\".\n",
+			"description": "Sort actions by field and direction. May be used multiple times.\n\nFor more information, see \"Sorting\".\n",
 			"default": "[\n  null\n]",
 			"type": "json",
 			"routing": {
@@ -1488,7 +1488,7 @@ export const volumesDescription: INodeProperties[] = [
 		{
 			"displayName": "Status",
 			"name": "status",
-			"description": "Filter the actions by status. Can be used multiple times. The response will only\ncontain actions matching the specified statuses.\n",
+			"description": "Filter the actions by status. May be used multiple times.\n\nThe response will only contain actions matching the specified statuses.\n",
 			"default": "[\n  null\n]",
 			"type": "json",
 			"routing": {

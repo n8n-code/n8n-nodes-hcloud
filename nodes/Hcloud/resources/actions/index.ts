@@ -64,7 +64,7 @@ export const actionsDescription: INodeProperties[] = [
 			"displayName": "ID",
 			"name": "id",
 			"required": true,
-			"description": "Filter the actions by ID. Can be used multiple times. The response will only contain\nactions matching the specified IDs.\n",
+			"description": "Filter the actions by ID. May be used multiple times.\n\nThe response will only contain actions matching the specified IDs.\n",
 			"default": "[\n  42\n]",
 			"type": "json",
 			"routing": {

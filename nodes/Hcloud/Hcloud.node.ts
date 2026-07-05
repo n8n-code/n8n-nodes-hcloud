@@ -67,7 +67,7 @@ export class Hcloud implements INodeType {
 				{
 					"name": "Datacenters",
 					"value": "Datacenters",
-					"description": "Each Datacenter represents a _virtual_ Datacenter which is made up of possible many physical Datacenters where Servers are hosted.\n\nSee the [Hetzner Locations Docs](https://docs.hetzner.com/cloud/general/locations/#what-datacenters-are-there) for more details about Datacenters.\n"
+					"description": "Each Datacenter represents a _virtual_ Datacenter which may consist of possibly many physical Datacenters. A physical Datacenter is where Servers are hosted.\n\nSee the [Hetzner Locations Docs](https://docs.hetzner.com/cloud/general/locations/#what-datacenters-are-there) for more details about Datacenters.\n"
 				},
 				{
 					"name": "Firewalls",
@@ -122,7 +122,7 @@ export class Hcloud implements INodeType {
 				{
 					"name": "Primary Ips",
 					"value": "Primary Ips",
-					"description": "Primary IPs help you to create more flexible networking setups. You can assign at most one Primary IP of type `ipv4` and one of type `ipv6` per Server. This Server then uses these IPs.\n\nYou can only unassign a Primary IP from a Server when it's powered off. This Primary IP can then be assigned to a different powered off Server, or you can keep it around for later use.\n\nPrimary IPs are bound to a specific Datacenter. You can not assign a Primary IP from one Datacenter to a Server in a different Datacenter. If you need this capability use Floating IPs instead.\n\nIf your Server's operating system supports cloud-init there is no further configuration needed to make Primary IPs work.\n\nPrimary IPs of type `ipv4` use a single IPv4 address as their `ip` property. Primary IPs of type `ipv6` use a /64 network such as `fc00::/64` as their `ip` property. Any IP address within that network can be used on your host.\n\nPrimary IPs are billed on an hourly basis.\n"
+					"description": "Primary IPs help you to create more flexible networking setups. You can assign at most one Primary IP of type `ipv4` and one of type `ipv6` per Server. This Server then uses these IPs.\n\nYou can only unassign a Primary IP from a Server when it's powered off. This Primary IP can then be assigned to a different powered off Server, or you can keep it around for later use.\n\nPrimary IPs are bound to a specific Location. You can not assign a Primary IP from one Location to a Server in a different Location. If you need this capability use Floating IPs instead.\n\nIf your Server's operating system supports cloud-init there is no further configuration needed to make Primary IPs work.\n\nPrimary IPs of type `ipv4` use a single IPv4 address as their `ip` property. Primary IPs of type `ipv6` use a /64 network such as `fc00::/64` as their `ip` property. Any IP address within that network can be used on your host.\n\nPrimary IPs are billed on an hourly basis.\n"
 				},
 				{
 					"name": "Server Types",

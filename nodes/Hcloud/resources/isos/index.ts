@@ -63,7 +63,7 @@ export const isosDescription: INodeProperties[] = [
 		{
 			"displayName": "Name",
 			"name": "name",
-			"description": "Filter resources by their name. The response will only contain the resources\nmatching exactly the specified name.\n",
+			"description": "Filter resources by their name.\n\nThe response will only contain the resources\nmatching exactly the specified name.\n",
 			"default": "",
 			"type": "string",
 			"routing": {
@@ -88,7 +88,7 @@ export const isosDescription: INodeProperties[] = [
 		{
 			"displayName": "Architecture",
 			"name": "architecture",
-			"description": "Filter resources by cpu architecture. The response will only contain the resources\nwith the specified cpu architecture.\n",
+			"description": "Filter resources by cpu architecture.\n\nThe response will only contain the resources with the specified cpu architecture.\n",
 			"default": "x86",
 			"type": "options",
 			"options": [
@@ -123,7 +123,7 @@ export const isosDescription: INodeProperties[] = [
 		{
 			"displayName": "Include Architecture Wildcard",
 			"name": "include_architecture_wildcard",
-			"description": "Include Images with wildcard architecture (architecture is null). Works only if architecture filter is specified.",
+			"description": "Include Images with wildcard architecture (architecture is null). Architecture filter must be specified.",
 			"default": true,
 			"type": "boolean",
 			"routing": {

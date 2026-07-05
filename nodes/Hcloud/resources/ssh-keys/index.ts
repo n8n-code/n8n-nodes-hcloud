@@ -99,7 +99,7 @@ export const sshKeysDescription: INodeProperties[] = [
 		{
 			"displayName": "Sort",
 			"name": "sort",
-			"description": "Sort resources by field and direction. Can be used multiple times. For more\ninformation, see \"Sorting\".\n",
+			"description": "Sort resources by field and direction. May be used multiple times.\n\nFor more information, see \"Sorting\".\n",
 			"default": "[\n  null\n]",
 			"type": "json",
 			"routing": {
@@ -124,7 +124,7 @@ export const sshKeysDescription: INodeProperties[] = [
 		{
 			"displayName": "Name",
 			"name": "name",
-			"description": "Filter resources by their name. The response will only contain the resources\nmatching exactly the specified name.\n",
+			"description": "Filter resources by their name.\n\nThe response will only contain the resources\nmatching exactly the specified name.\n",
 			"default": "",
 			"type": "string",
 			"routing": {
@@ -149,7 +149,7 @@ export const sshKeysDescription: INodeProperties[] = [
 		{
 			"displayName": "Fingerprint",
 			"name": "fingerprint",
-			"description": "Can be used to filter SSH keys by their fingerprint. The response will only contain the SSH key matching the specified fingerprint.",
+			"description": "May be used to filter SSH keys by their fingerprint. The response will only contain the SSH key matching the specified fingerprint.",
 			"default": "",
 			"type": "string",
 			"routing": {
@@ -174,7 +174,7 @@ export const sshKeysDescription: INodeProperties[] = [
 		{
 			"displayName": "Label Selector",
 			"name": "label_selector",
-			"description": "Filter resources by labels. The response will only contain resources matching the\nlabel selector. For more information, see \"Label Selector\".\n",
+			"description": "Filter resources by labels.\n\nThe response will only contain resources matching the label selector.\nFor more information, see \"Label Selector\".\n",
 			"default": "",
 			"type": "string",
 			"routing": {
